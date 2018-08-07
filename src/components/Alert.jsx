@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { mergeClassName } from './common';
-import { withPurpose } from '../utilities';
+import { stack, withClassName, withPurpose } from '../utilities';
 
 class Alert extends Component {
   render() {
-    const p = JS.lessProps(this.props, ['role', 'className']);
+    const p = JS.lessProps(this.props, 'role');
 
     return (
       <div
         role="alert"
-        className={mergeClassName(this.props, 'alert')}
         {...p}
       >
         {this.props.children}
@@ -20,4 +18,10 @@ class Alert extends Component {
   }
 }
 
-export default withPurpose(Alert, 'alert');
+export default stack(
+  Alert,
+  [
+    withClassName('alert'),
+    withPurpose('alert')
+  ]
+);

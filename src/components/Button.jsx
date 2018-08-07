@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { mergeClassName } from './common';
-import { withPurpose } from '../utilities';
+import { stack, withClassName, mergeClassName, withPurpose } from '../utilities';
 
 class Button extends Component {
   render() {
@@ -10,7 +9,6 @@ class Button extends Component {
     const cn = mergeClassName(
       this.props,
       [
-        'btn',
         size? 'btn-' + size : '',
         block? 'btn-block' : '',
         active? 'active' : ''
@@ -34,7 +32,15 @@ class Button extends Component {
   }
 }
 
-export default withPurpose(Button, function(props) {
+function purposePrefix(props) {
   const { outline } = props;
   return outline? 'btn-outline' : 'btn';
-});
+}
+
+export default stack(
+  Button,
+  [
+    withClassName('btn'),
+    withPurpose(purposePrefix)
+  ]
+);

@@ -26,14 +26,16 @@ function purposeClassName(props, prefix) {
     : founc[0];
 }
 
-export function withPurpose(Comp, prefix) {
-  return class extends Component {
-    render() {
-      const { className } = this.props;
-      const p = JS.lessProps(this.props, purposes.concat('className'));
-      const cn = [].concat(className || [], purposeClassName(this.props, prefix));
+export function withPurpose(prefix) {
+  return function(Comp) {
+    return class extends Component {
+      render() {
+        const { className } = this.props;
+        const p = JS.lessProps(this.props, purposes.concat('className'));
+        const cn = [].concat(className || [], purposeClassName(this.props, prefix));
 
-      return <Comp {...p} className={cn.join(' ')} />
+        return <Comp {...p} className={cn.join(' ')} />
+      }
     }
   }
 }
