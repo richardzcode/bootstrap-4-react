@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { JS } from 'fsts';
 
 import { stack, withClassName, mergeClassName, withPurpose } from '../utilities';
+import { _Button } from './dom';
 
 class Button extends Component {
   render() {
@@ -21,13 +22,13 @@ class Button extends Component {
     if (active) { p['aria-pressed'] = 'true' }
 
     return (
-      <button
+      <_Button
         type="button"
         className={cn}
         {...p}
       >
         {this.props.children}
-      </button>
+      </_Button>
     )
   }
 }

@@ -39,3 +39,5 @@ export function withPurpose(prefix) {
     }
   }
 }
+
+export { purposes };
