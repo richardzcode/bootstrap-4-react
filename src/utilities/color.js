@@ -10,6 +10,8 @@ function toClassName(prop, val) {
   if (!val) { return []; }
 
   return [].concat(val).join(' ').split(' ')
+    // do not filter so handles text utilities as well
+    //.filter(item => (prop === 'text'? textColors : bgColors).includes(item))
     .map(item => prop + '-' + item);
 }
 

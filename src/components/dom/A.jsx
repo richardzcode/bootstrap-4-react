@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 import { stack, withColor, withSpacing, withBorder } from '../../utilities';
 
-class Button extends Component {
+class A extends Component {
   render() {
-    return <button {...this.props}>{this.props.children}</button>
+    return <a {...this.props}>{this.props.children}</a>
   }
 }
 
 export default stack(
-  Button,
+  A,
   [
     withColor(),
     withSpacing(),

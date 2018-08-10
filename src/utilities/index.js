@@ -2,6 +2,7 @@ export { withClassName, mergeClassName } from './className';
 export { withPurpose } from './purpose';
 export { withColor } from './color';
 export { withSpacing } from './spacing';
+export { withBorder } from './border';
 
 export function stack(Comp, funcs) {
   if (!funcs) { return Comp; }

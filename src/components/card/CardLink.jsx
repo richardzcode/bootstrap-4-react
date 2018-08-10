@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
 import { withClassName } from '../../utilities';
+import { _A } from '../dom';
 
 class CardLink extends Component {
   render() {
-    return <a {...this.props}>{this.props.children}</a>
+    return <_A {...this.props}>{this.props.children}</_A>
   }
 }
 

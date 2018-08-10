@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
 import { withClassName } from '../../utilities';
+import { _Div } from '../dom';
 
 class CardImageOverlay extends Component {
   render() {
-    return <div {...this.props}>{this.props.children}</div>
+    return <_Div {...this.props}>{this.props.children}</_Div>
   }
 }
 
