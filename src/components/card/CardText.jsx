@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 import { withClassName } from '../../utilities';
-import { _P } from '../dom';
+import { BP } from '../dom';
 
 class CardText extends Component {
   render() {
-    return <_P {...this.props}>{this.props.children}</_P>
+    return <BP {...this.props}>{this.props.children}</BP>
   }
 }
 

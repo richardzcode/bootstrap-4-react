@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { JS } from 'fsts';
 
 import { withClassName } from '../../utilities';
-import { _Img } from '../dom';
+import { BImg } from '../dom';
 
 class CardImage extends Component {
   render() {
     const p = JS.lessProps(this.props, ['top', 'bottom']);
 
-    return <_Img {...p} />
+    return <BImg {...p} />
   }
 }
 

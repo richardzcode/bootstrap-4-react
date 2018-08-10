@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { stack, withColor, withSpacing, withBorder } from '../../utilities';
+import { domStack } from './common';
 
 class Button extends Component {
   render() {
@@ -8,11 +8,4 @@ class Button extends Component {
   }
 }
 
-export default stack(
-  Button,
-  [
-    withColor(),
-    withSpacing(),
-    withBorder()
-  ]
-);
+export default domStack(Button);

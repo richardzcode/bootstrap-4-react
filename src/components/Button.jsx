@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { JS } from 'fsts';
 
 import { stack, withClassName, mergeClassName, withPurpose } from '../utilities';
-import { _Button } from './dom';
+import { BButton } from './dom';
 
 class Button extends Component {
   render() {
@@ -22,13 +22,13 @@ class Button extends Component {
     if (active) { p['aria-pressed'] = 'true' }
 
     return (
-      <_Button
+      <BButton
         type="button"
         className={cn}
         {...p}
       >
         {this.props.children}
-      </_Button>
+      </BButton>
     )
   }
 }

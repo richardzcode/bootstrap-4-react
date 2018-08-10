@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { stack, withColor, withSpacing, withBorder } from '../../utilities';
+import { domStack } from './common';
 
 class Div extends Component {
   render() {
@@ -8,11 +8,4 @@ class Div extends Component {
   }
 }
 
-export default stack(
-  Div,
-  [
-    withColor(),
-    withSpacing(),
-    withBorder()
-  ]
-);
+export default domStack(Div);

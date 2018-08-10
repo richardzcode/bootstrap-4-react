@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { JS } from 'fsts';
 
 import { stack, mergeClassName, withClassName } from '../utilities';
-import { _Div } from './dom';
+import { BDiv } from './dom';
 
 class ButtonGroup extends Component {
   render() {
@@ -16,7 +16,7 @@ class ButtonGroup extends Component {
       ['className', 'role', 'size', 'vertical']
     );
 
-    return <_Div role="group" className={cn} {...p}>{this.props.children}</_Div>
+    return <BDiv role="group" className={cn} {...p}>{this.props.children}</BDiv>
   }
 }
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { JS } from 'fsts';
 
 import { stack, mergeClassName, withClassName, withPurpose } from '../utilities';
+import { BSpan } from './dom';
 
 class Badge extends Component {
   render() {
@@ -10,7 +11,7 @@ class Badge extends Component {
     const p = JS.lessProps(this.props, ['className', 'pill']);
 
     return (
-      <span {...p} className={cn}>{this.props.children}</span>
+      <BSpan {...p} className={cn}>{this.props.children}</BSpan>
     )
   }
 }
