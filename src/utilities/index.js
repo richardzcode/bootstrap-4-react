@@ -6,6 +6,7 @@ export { withSpacing } from './spacing';
 export { withSizing } from './sizing';
 export { withBorder } from './border';
 export { withActive } from './active';
+export { withDrop } from './drop';
 export { withScreenreaders } from './screenreaders';
 
 export function stack(Comp, funcs) {

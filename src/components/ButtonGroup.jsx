@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { stack, mergeClassName, withClassName } from '../utilities';
+import { stack, mergeClassName, withClassName, withDrop } from '../utilities';
 import { BDiv } from './dom';
 
 class ButtonGroup extends Component {
@@ -28,6 +28,7 @@ function groupClassName(props) {
 export default stack(
   ButtonGroup,
   [
-    withClassName(groupClassName)
+    withClassName(groupClassName),
+    withDrop()
   ]
 );

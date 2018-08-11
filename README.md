@@ -19,6 +19,7 @@ npm install --save bootstrap-4-react
 - [Button](#button)
 - [ButtonGroup](#buttongroup)
 - [Card](#card)
+- [Dropdown](#dropdown)
 - [Carousel](#carousel)
 - [Figure](#figure)
 
@@ -163,6 +164,31 @@ export default class App extends Component {
           <Carousel.Next.Icon />
         </Carousel.Next>
       </Carousel>
+    )
+  }
+}
+```
+
+### Dropdown
+
+```
+import { Dropdown } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <Dropdown dropleft>
+        <Dropdown.Button secondary size="lg">Dropdown button</Dropdown.Button>
+        <Dropdown.Menu>
+          <Dropdown.Item href="#" active>Action</Dropdown.Item>
+          <Dropdown.Item disabled>Another action</Dropdown.Item>
+          <Dropdown.Item>Something else here</Dropdown.Item>
+          <Dropdown.ItemText>Text</Dropdown.ItemText>
+          <Dropdown.Divider />
+          <Dropdown.Header>Dropdown header</Dropdown.Header>
+          <Dropdown.Item>Separated link</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
     )
   }
 }

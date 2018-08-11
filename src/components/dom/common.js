@@ -7,6 +7,7 @@ import {
   withSpacing,
   withSizing,
   withBorder,
+  withActive,
   withScreenreaders
 } from '../../utilities';
 
@@ -19,6 +20,7 @@ export function domStack(Comp) {
       withSpacing(),
       withSizing(),
       withBorder(),
+      withActive(),
       withScreenreaders()
     ]
   );

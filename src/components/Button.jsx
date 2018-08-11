@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { JS } from 'fsts';
 
 import { stack, withClassName, mergeClassName, withPurpose } from '../utilities';
-import { BButton } from './dom';
+import { BButton, BA } from './dom';
 
 class Button extends Component {
   render() {
-    const { size, block, active } = this.props;
+    const { size, block, active, as } = this.props;
     const cn = mergeClassName(
       this.props,
       [
@@ -17,18 +17,14 @@ class Button extends Component {
     );
     const p = JS.lessProps(
       this.props,
-      ['type', 'className', 'size', 'block', 'active', 'outline']
+      ['type', 'className', 'size', 'block', 'outline', 'as']
     );
     if (active) { p['aria-pressed'] = 'true' }
 
     return (
-      <BButton
-        type="button"
-        className={cn}
-        {...p}
-      >
-        {this.props.children}
-      </BButton>
+      as && as === 'a'
+      ? <BA role="button" className={cn} {...p}>{this.props.children}</BA>
+      : <BButton type="button" className={cn} {...p}>{this.props.children}</BButton>
     )
   }
 }

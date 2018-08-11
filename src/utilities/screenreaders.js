@@ -12,7 +12,7 @@ export function withScreenreaders() {
           this.props,
           srOnly? ['sr-only', (srOnly === 'focusable'? 'sr-only-focusable' : '')] : ''
         );
-        const p = JS.lessProps(this.props, ['className', 'active']);
+        const p = JS.lessProps(this.props, ['className', 'srOnly']);
 
         return <Comp {...p} className={cn} />
       }

@@ -3,19 +3,20 @@ import { JS } from 'fsts';
 
 import { mergeClassName } from './className';
 
-export function withActive() {
+export function withDrop() {
   return function(Comp) {
     return class extends Component {
       render() {
-        const { active, disabled } = this.props;
+        const { dropup, dropleft, dropright} = this.props;
         const cn = mergeClassName(
           this.props,
           [
-            active? 'active' : '',
-            disabled? 'disabled' : ''
+            dropup? 'dropup' : '',
+            dropleft? 'dropleft' : '',
+            dropright? 'dropright' : ''
           ]
         );
-        const p = JS.lessProps(this.props, ['className', 'active', 'disabled']);
+        const p = JS.lessProps(this.props, ['className', 'dropup', 'dropleft', 'dropright']);
 
         return <Comp {...p} className={cn} />
       }
