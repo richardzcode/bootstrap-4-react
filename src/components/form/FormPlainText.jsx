@@ -10,7 +10,7 @@ class FormPlainText extends Component {
     const { readonly } = this.props;
     const p = JS.lessProps(this.props, 'readonly');
 
-    return <BInput {...p} type="text" readonly='readonly'>{this.props.children}</BInput>
+    return <BInput {...p} type="text" readOnly='readonly'>{this.props.children}</BInput>
   }
 }
 

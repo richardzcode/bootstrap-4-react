@@ -7,6 +7,7 @@ export { default as Carousel } from './carousel';
 export { default as Dropdown } from './dropdown';
 export { default as Figure } from './figure';
 export { default as Form } from './form';
+export { default as InputGroup } from './inputGroup';
 
 export * from './dom';
 

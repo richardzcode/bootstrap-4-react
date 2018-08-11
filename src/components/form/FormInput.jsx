@@ -11,7 +11,7 @@ class FormInput extends Component {
     const p = JS.lessProps(this.props, 'readonly');
 
     return readonly
-        ? <BInput {...p} readonly='readonly'>{this.props.children}</BInput>
+        ? <BInput {...p} readOnly='readonly'>{this.props.children}</BInput>
         : <BInput {...p}>{this.props.children}</BInput>
   }
 }

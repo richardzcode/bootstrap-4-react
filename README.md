@@ -23,6 +23,7 @@ npm install --save bootstrap-4-react
 - [Carousel](#carousel)
 - [Figure](#figure)
 - [Form](#form)
+- [InputGroup](#inputgroup)
 
 ### Alert
 
@@ -232,27 +233,27 @@ export default class App extends Component {
       <div>
         <Form m="5">
           <Form.Group>
-            <label for="exampleInputEmail">Email Address</label>
+            <label htmlFor="exampleInputEmail">Email Address</label>
             <Form.Input lg type="email" id="exampleInputEmail" />
             <Form.Text text="muted"><small>We'll never share your email with anyone else.</small></Form.Text>
           </Form.Group>
           <Form.Group>
-            <label for="exampleInputPassword">Password</label>
+            <label htmlFor="exampleInputPassword">Password</label>
             <Form.Input type="password" id="exampleInputPassword" />
           </Form.Group>
           <Form.Group>
             <Form.Input type="text" readonly="readonly" />
           </Form.Group>
           <Form.Group>
-            <label for="staticEmail">Email</label>
+            <label htmlFor="staticEmail">Email</label>
             <Form.PlainText id="staticEmail" value="email@example.com" />
           </Form.Group>
           <Form.Check>
             <Form.CheckInput type="checkbox" id="exampleCheck" />
-            <label for="exampleCheck">Check me out</label>
+            <label htmlFor="exampleCheck">Check me out</label>
           </Form.Check>
           <Form.Group>
-            <label for="exampleSelect">Example select</label>
+            <label htmlFor="exampleSelect">Example select</label>
             <Form.Select lg id="exampleSelect">
               <option>1</option>
               <option>2</option>
@@ -260,7 +261,7 @@ export default class App extends Component {
             </Form.Select>
           </Form.Group>
           <Form.Group>
-            <label for="exampleSelectMultiple">Example select multiple</label>
+            <label htmlFor="exampleSelectMultiple">Example select multiple</label>
             <Form.Select id="exampleSelectMultiple" multiple>
               <option>1</option>
               <option>2</option>
@@ -268,13 +269,13 @@ export default class App extends Component {
             </Form.Select>
           </Form.Group>
           <Form.Group>
-            <label for="exampleTextarea">Example textarea</label>
+            <label htmlFor="exampleTextarea">Example textarea</label>
             <Form.Textarea id="exampleTextarea" valid={true} />
             <Form.Feedback>Invalid feedback</Form.Feedback>
             <Form.Feedback valid={true}>Valid feedback</Form.Feedback>
           </Form.Group>
           <Form.Group>
-            <label for="exampleRange">Example Range</label>
+            <label htmlFor="exampleRange">Example Range</label>
             <Form.Range id="exampleRange" />
           </Form.Group>
           <Form.Check>
@@ -297,6 +298,56 @@ export default class App extends Component {
           </Form.Group>
           <Button type="submit" primary>Submit</Button>
         </Form>
+      </div>
+    )
+  }
+}
+```
+
+### InputGroup
+
+```
+import React, { Component } from 'react';
+import { Alert } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <InputGroup sm>
+          <InputGroup.Prepend><InputGroup.Text>Small</InputGroup.Text></InputGroup.Prepend>
+          <Form.Input type="text" />
+        </InputGroup>
+        <InputGroup>
+          <InputGroup.Prepend><InputGroup.Text>@</InputGroup.Text></InputGroup.Prepend>
+          <Form.Input type="text" placeholder="Username" />
+        </InputGroup>
+        <InputGroup lg>
+          <Form.Input type="text" placeholder="Recipient's username" />
+          <InputGroup.Append>
+            <InputGroup.Text>@example.com</InputGroup.Text>
+          </InputGroup.Append>
+        </InputGroup>
+        <InputGroup>
+          <InputGroup.Prepend>
+            <InputGroup.Text><input type="checkbox" /></InputGroup.Text>
+          </InputGroup.Prepend>
+          <Form.Input type="text" />
+        </InputGroup>
+        <InputGroup>
+          <InputGroup.Prepend>
+            <InputGroup.Text>First and last name</InputGroup.Text>
+          </InputGroup.Prepend>
+          <Form.Input type="text" aria-label="First name" />
+          <Form.Input type="text" aria-label="Last name" />
+        </InputGroup>
+        <InputGroup>
+          <InputGroup.Prepend>
+            <InputGroup.Text>$</InputGroup.Text>
+            <InputGroup.Text>0.00</InputGroup.Text>
+          </InputGroup.Prepend>
+          <Form.Input type="text" />
+        </InputGroup>
       </div>
     )
   }
