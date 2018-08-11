@@ -26,6 +26,7 @@ npm install --save bootstrap-4-react
 ### Alert
 
 ```
+import React, { Component } from 'react';
 import { Alert } from 'bootstrap-4-react';
 
 export default class App extends Component {
@@ -43,6 +44,7 @@ export default class App extends Component {
 ### Badge
 
 ```
+import React, { Component } from 'react';
 import { Badge, Button } from 'bootstrap-4-react';
 
 export default class App extends Component {
@@ -62,6 +64,7 @@ export default class App extends Component {
 ### Button
 
 ```
+import React, { Component } from 'react';
 import { Button } from 'bootstrap-4-react';
 
 export default class App extends Component {
@@ -81,6 +84,7 @@ export default class App extends Component {
 ### ButtonGroup
 
 ```
+import React, { Component } from 'react';
 import { ButtonGroup, Button } from 'bootstrap-4-react';
 
 export default class App extends Component {
@@ -106,6 +110,7 @@ export default class App extends Component {
 ### Card
 
 ```
+import React, { Component } from 'react';
 import { Card } from 'bootstrap-4-react';
 
 export default class App extends Component {
@@ -132,6 +137,7 @@ export default class App extends Component {
 ### Carousel
 
 ```
+import React, { Component } from 'react';
 import { Carousel, BImg } from 'bootstrap-4-react';
 
 export default class App extends Component {
@@ -172,6 +178,7 @@ export default class App extends Component {
 ### Dropdown
 
 ```
+import React, { Component } from 'react';
 import { Dropdown } from 'bootstrap-4-react';
 
 export default class App extends Component {
@@ -197,6 +204,7 @@ export default class App extends Component {
 ### Figure
 
 ```
+import React, { Component } from 'react';
 import { Figure } from 'bootstrap-4-react';
 
 export default class App extends Component {
