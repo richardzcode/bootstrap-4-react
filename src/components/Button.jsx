@@ -17,14 +17,14 @@ class Button extends Component {
     );
     const p = JS.lessProps(
       this.props,
-      ['type', 'className', 'size', 'block', 'outline', 'as']
+      ['className', 'size', 'block', 'outline', 'as']
     );
     if (active) { p['aria-pressed'] = 'true' }
 
     return (
       as && as === 'a'
       ? <BA role="button" className={cn} {...p}>{this.props.children}</BA>
-      : <BButton type="button" className={cn} {...p}>{this.props.children}</BButton>
+      : <BButton className={cn} {...p}>{this.props.children}</BButton>
     )
   }
 }

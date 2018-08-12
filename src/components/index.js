@@ -13,6 +13,7 @@ export { default as Lead } from './Lead';
 export { default as Blockquote } from './Blockquote';
 export { default as Jumbotron } from './Jumbotron';
 export { default as ListGroup } from './listGroup';
+export { default as Modal } from './modal';
 
 export * from './dom';
 
