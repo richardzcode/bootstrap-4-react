@@ -8,6 +8,9 @@ export { default as Dropdown } from './dropdown';
 export { default as Figure } from './figure';
 export { default as Form } from './form';
 export { default as InputGroup } from './inputGroup';
+export * from './Display';
+export { default as Lead } from './Lead';
+export { default as Blockquote } from './Blockquote';
 
 export * from './dom';
 

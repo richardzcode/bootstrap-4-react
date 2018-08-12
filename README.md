@@ -16,14 +16,18 @@ npm install --save bootstrap-4-react
 ## Components
 
 - [Alert](#alert)
+- [Badge](#badge)
+- [Blockquote](#blockquote)
 - [Button](#button)
 - [ButtonGroup](#buttongroup)
 - [Card](#card)
+- [Display](#display)
 - [Dropdown](#dropdown)
 - [Carousel](#carousel)
 - [Figure](#figure)
 - [Form](#form)
 - [InputGroup](#inputgroup)
+- [Lead](#lead)
 
 ### Alert
 
@@ -58,6 +62,24 @@ export default class App extends Component {
           Profile <Badge light>9</Badge>
         </Button>
       </div>
+    )
+  }
+}
+```
+
+### Blockquote
+
+```
+import React, { Component } from 'react';
+import { Blockquote } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <Blockquote>
+        <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <Blockquote.Footer>Someone famous in <cite title="Source Title">Source Title</cite></Blockquote.Footer>
+      </Blockquote>
     )
   }
 }
@@ -172,6 +194,26 @@ export default class App extends Component {
           <Carousel.Next.Icon />
         </Carousel.Next>
       </Carousel>
+    )
+  }
+}
+```
+
+### Display
+
+```
+import React, { Component } from 'react';
+import { Display1, Display2, Display3, Display4 } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Display1>Display 1</Display1>
+        <Display2>Display 2</Display2>
+        <Display3>Display 3</Display3>
+        <Display4>Display 4</Display4>
+      </div>
     )
   }
 }
@@ -308,7 +350,7 @@ export default class App extends Component {
 
 ```
 import React, { Component } from 'react';
-import { Alert } from 'bootstrap-4-react';
+import { InputGroup } from 'bootstrap-4-react';
 
 export default class App extends Component {
   render() {
@@ -349,6 +391,21 @@ export default class App extends Component {
           <Form.Input type="text" />
         </InputGroup>
       </div>
+    )
+  }
+}
+```
+
+### Lead
+
+```
+import React, { Component } from 'react';
+import { Lead } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <Lead>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</Lead>
     )
   }
 }
