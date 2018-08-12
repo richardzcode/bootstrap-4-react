@@ -11,6 +11,7 @@ export { default as InputGroup } from './inputGroup';
 export * from './Display';
 export { default as Lead } from './Lead';
 export { default as Blockquote } from './Blockquote';
+export { default as Jumbotron } from './Jumbotron';
 
 export * from './dom';
 
