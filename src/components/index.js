@@ -14,6 +14,7 @@ export { default as Blockquote } from './Blockquote';
 export { default as Jumbotron } from './Jumbotron';
 export { default as ListGroup } from './listGroup';
 export { default as Modal } from './modal';
+export { default as Nav } from './nav';
 
 export * from './dom';
 
