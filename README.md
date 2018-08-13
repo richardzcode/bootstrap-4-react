@@ -29,6 +29,7 @@ npm install --save bootstrap-4-react
 - [Dropdown](#dropdown)
 - [Figure](#figure)
 - [Form](#form)
+- [Grid](#grid)
 - [InputGroup](#inputgroup)
 - [Jumbotron](#jumbotron)
 - [Lead](#lead)
@@ -373,6 +374,38 @@ export default class App extends Component {
           <Button type="submit" primary>Submit</Button>
         </Form>
       </div>
+    )
+  }
+}
+```
+
+### Grid
+
+```
+import React, { Component } from 'react';
+import { Container, Row, Col, BDiv } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <Container>
+        <Row>
+          <Col border>One of two</Col>
+          <Col border>One of two</Col>
+        </Row>
+        <Row>
+          <Col border>One of three</Col>
+          <Col border>One of three</Col>
+          <Col border>One of three</Col>
+        </Row>
+        <Row>
+          <Col border>Column</Col>
+          <Col border>Column</Col>
+          <BDiv w="100"></BDiv>
+          <Col border>Column</Col>
+          <Col border>Column</Col>
+        </Row>
+      </Container>
     )
   }
 }

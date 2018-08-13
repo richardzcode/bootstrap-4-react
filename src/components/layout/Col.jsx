@@ -22,7 +22,7 @@ class Col extends Component {
     );
     const p = JS.lessProps(this.props, ['className', 'col', 'order'].concat(breakpoints));
 
-    return <BDiv {...p}>{this.props.children}</BDiv>
+    return <BDiv {...p} className={cn}>{this.props.children}</BDiv>
   }
 }
 

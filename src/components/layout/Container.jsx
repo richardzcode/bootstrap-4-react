@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { JS } from 'fsts';
 
 import { withClassName } from '../../utilities';
 import { BDiv } from '../dom';
