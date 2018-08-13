@@ -4,6 +4,7 @@ export { default as Button } from './Button';
 export { default as ButtonGroup } from './ButtonGroup';
 export { default as Card } from './card';
 export { default as Carousel } from './carousel';
+export { default as Collapse } from './Collapse';
 export { default as Dropdown } from './dropdown';
 export { default as Figure } from './figure';
 export { default as Form } from './form';
@@ -15,7 +16,9 @@ export { default as Jumbotron } from './Jumbotron';
 export { default as ListGroup } from './listGroup';
 export { default as Modal } from './modal';
 export { default as Nav } from './nav';
+export { default as Navbar } from './navbar';
 
 export * from './dom';
+export * from './layout';
 
 export { default as StickyFooter } from './StickyFooter';

@@ -3,14 +3,16 @@ import { JS } from 'fsts';
 
 import { mergeClassName } from './className';
 
-export function withDisplay() {
+export function withAlign() {
   return function(Comp) {
     return class extends Component {
       render() {
-        const { className, display } = this.props;
+        const { className, align } = this.props;
         const cn = mergeClassName(
           this.props,
-          [].concat(display).join(' ').split(' ').filter(name => !!name).map(name => 'd-' + name)
+          [].concat(align).join(' ').split(' ')
+            .filter(name => !!name)
+            .map(name => 'align-' + name)
         );
         const p = JS.lessProps(this.props, ['className', 'display']);
 

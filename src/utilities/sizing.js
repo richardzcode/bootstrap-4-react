@@ -15,11 +15,11 @@ export function withSizing() {
     return class extends Component {
       render() {
         const { className } = this.props;
-        const p = JS.lessProps(this.props, ['className', 'w', 'h']);
         const cn = [].concat(
           className || [],
           toClassName(this.props)
         );
+        const p = JS.lessProps(this.props, ['className', 'w', 'h']);
 
         return <Comp {...p} className={cn.join(' ')} />
       }

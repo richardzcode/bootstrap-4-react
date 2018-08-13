@@ -16,4 +16,4 @@ function containerClassName(props) {
   return fluid? 'container-fluid' : 'container';
 }
 
-export default withClassName(congtainerClassName)(Container);
+export default withClassName(containerClassName)(Container);

@@ -4,6 +4,7 @@ import {
   stack,
   withColor,
   withDisplay,
+  withAlign,
   withSpacing,
   withSizing,
   withBorder,
@@ -17,6 +18,7 @@ export function domStack(Comp) {
     [
       withColor(),
       withDisplay(),
+      withAlign(),
       withSpacing(),
       withSizing(),
       withBorder(),

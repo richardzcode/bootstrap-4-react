@@ -23,3 +23,4 @@ export { default as BH5 } from './H5';
 export { default as BH6 } from './H6';
 export { default as BBlockquote } from './Blockquote';
 export { default as BFooter } from './Footer';
+export { default as BNav } from './Nav';

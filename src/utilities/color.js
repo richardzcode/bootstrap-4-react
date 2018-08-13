@@ -20,12 +20,12 @@ export function withColor() {
     return class extends Component {
       render() {
         const { className, text, bg } = this.props;
-        const p = JS.lessProps(this.props, ['className', 'text', 'bg']);
         const cn = [].concat(
           className || [],
           toClassName('text', text),
           toClassName('bg', bg)
         );
+        const p = JS.lessProps(this.props, ['className', 'text', 'bg']);
 
         return <Comp {...p} className={cn.join(' ')} />
       }

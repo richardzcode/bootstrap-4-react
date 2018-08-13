@@ -14,7 +14,11 @@ function toClassName(props, prefix) {
       return { name: name, value: props[name] }
     })
     .filter(pair => !!pair.value)
-    .map(pair => pair.name + '-' + pair.value);
+    .map(pair => {
+      return [].concat(pair.value).join(' ').split(' ')
+        .map(item => pair.name + '-' + item)
+        .join(' ');
+    });
 }
 
 export function withSpacing() {
@@ -22,12 +26,12 @@ export function withSpacing() {
     return class extends Component {
       render() {
         const { className } = this.props;
-        const p = JS.lessProps(this.props, ['className'].concat(propertyNames('m'), propertyNames('p')));
         const cn = [].concat(
           className || [],
           toClassName(this.props, 'm'),
           toClassName(this.props, 'p')
         );
+        const p = JS.lessProps(this.props, ['className'].concat(propertyNames('m'), propertyNames('p')));
 
         return <Comp {...p} className={cn.join(' ')} />
       }

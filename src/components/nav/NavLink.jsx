@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import { JS } from 'fsts';
 
-import { withClassName } from '../../utilities';
+import { mergeClassName, withClassName } from '../../utilities';
 import { BA } from '../dom';
 
 class NavLink extends Component {
   render() {
-    return <BA {...this.props}>{this.props.children}</BA>
+    const { dropdownToggle } = this.props;
+    const cn = mergeClassName(this.props, dropdownToggle? 'dropdown-toggle' : '');
+    const p = JS.lessProps(this.props, ['className', 'dropdownToggle']);
+
+    return <BA {...p} className={cn} data-toggle={dropdownToggle? 'dropdown' : ''}>{this.props.children}</BA>
   }
 }
 

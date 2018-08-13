@@ -8,7 +8,7 @@ class Modal extends Component {
   render() {
     const { fade } = this.props;
     const cn = mergeClassName(this.props, fade? 'fade' : '');
-    const p = JS.lessProps(this.props, ['tabIndex', 'role']);
+    const p = JS.lessProps(this.props, ['className', 'fade', 'tabIndex', 'role']);
 
     return <BDiv {...p} className={cn} tabIndex="-1" role="dialog">{this.props.children}</BDiv>
   }

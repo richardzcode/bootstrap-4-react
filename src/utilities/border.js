@@ -36,12 +36,12 @@ export function withBorder() {
     return class extends Component {
       render() {
         const { className, border, rounded } = this.props;
-        const p = JS.lessProps(this.props, ['className', 'border', 'rounded']);
         const cn = [].concat(
           className || [],
           borderClassName(border),
           roundedClassName(rounded)
         );
+        const p = JS.lessProps(this.props, ['className', 'border', 'rounded']);
 
         return <Comp {...p} className={cn.join(' ')} />
       }

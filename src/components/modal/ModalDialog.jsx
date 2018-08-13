@@ -8,7 +8,7 @@ class ModalDialog extends Component {
   render() {
     const { centered } = this.props;
     const cn = mergeClassName(this.props, centered? 'modal-dialog-centered' : '');
-    const p = JS.lessProps(this.props, 'role');
+    const p = JS.lessProps(this.props, ['className', 'centered', 'role']);
 
     return <BDiv {...p} className={cn} role="document">{this.props.children}</BDiv>
   }

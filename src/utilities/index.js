@@ -2,6 +2,7 @@ export { withClassName, mergeClassName } from './className';
 export { withPurpose } from './purpose';
 export { withColor } from './color';
 export { withDisplay } from './display';
+export { withAlign } from './align';
 export { withSpacing } from './spacing';
 export { withSizing } from './sizing';
 export { withBorder } from './border';
