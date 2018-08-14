@@ -121,7 +121,7 @@ export default class App extends Component {
       <div>
         <Button primary>Primary</Button>
         <Button secondary outline>Secondary</Button>
-        <Button success size="lg">Success</Button>
+        <Button success lg>Success</Button>
         <Button danger block>Danger</Button>
       </div>
     )
@@ -144,7 +144,7 @@ export default class App extends Component {
           <Button secondary>2</Button>
           <Button secondary>3</Button>
         </ButtonGroup>
-        <ButtonGroup vertical size="sm">
+        <ButtonGroup vertical sm>
           <Button secondary>1</Button>
           <Button secondary>2</Button>
           <Button secondary>3</Button>
@@ -277,7 +277,7 @@ export default class App extends Component {
   render() {
     return (
       <Dropdown dropleft>
-        <Dropdown.Button secondary size="lg">Dropdown button</Dropdown.Button>
+        <Dropdown.Button secondary lg>Dropdown button</Dropdown.Button>
         <Dropdown.Menu>
           <Dropdown.Item href="#" active>Action</Dropdown.Item>
           <Dropdown.Item disabled>Another action</Dropdown.Item>
@@ -489,7 +489,7 @@ export default class App extends Component {
         <Display4>Hello, world</Display4>
         <Lead>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</Lead>
         <hr className="my-4" />
-        <Button primary size="lg">Learn more</Button>
+        <Button primary lg>Learn more</Button>
       </Jumbotron>
     )
   }

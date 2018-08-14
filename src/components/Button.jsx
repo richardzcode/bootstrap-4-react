@@ -6,18 +6,19 @@ import { BButton, BA } from './dom';
 
 class Button extends Component {
   render() {
-    const { size, block, active, as } = this.props;
+    const { block, active, lg, sm, as } = this.props;
     const cn = mergeClassName(
       this.props,
       [
-        size? 'btn-' + size : '',
+        lg? 'btn-lg' : '',
+        sm? 'btn-sm' : '',
         block? 'btn-block' : '',
         active? 'active' : ''
       ]
     );
     const p = JS.lessProps(
       this.props,
-      ['className', 'size', 'block', 'outline', 'as']
+      ['className', 'block', 'outline', 'lg', 'sm', 'as']
     );
     if (active) { p['aria-pressed'] = 'true' }
 

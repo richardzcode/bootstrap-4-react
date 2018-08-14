@@ -6,14 +6,15 @@ import { BDiv } from './dom';
 
 class ButtonGroup extends Component {
   render() {
-    const { size } = this.props;
+    const { lg, sm } = this.props;
     const cn = mergeClassName(
       this.props,
-      size? 'btn-group-' + size : ''
+      lg? 'btn-group-lg' : '',
+      sm? 'btn-group-sm' : ''
     );
     const p = JS.lessProps(
       this.props,
-      ['className', 'role', 'size', 'vertical']
+      ['className', 'role', 'lg', 'sm', 'vertical']
     );
 
     return <BDiv role="group" className={cn} {...p}>{this.props.children}</BDiv>
