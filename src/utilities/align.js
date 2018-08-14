@@ -14,7 +14,7 @@ export function withAlign() {
             .filter(name => !!name)
             .map(name => 'align-' + name)
         );
-        const p = JS.lessProps(this.props, ['className', 'display']);
+        const p = JS.lessProps(this.props, ['className', 'align']);
 
         return <Comp {...p} className={cn} />
       }

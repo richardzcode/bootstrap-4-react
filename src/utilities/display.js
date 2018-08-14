@@ -7,12 +7,16 @@ export function withDisplay() {
   return function(Comp) {
     return class extends Component {
       render() {
-        const { className, display } = this.props;
+        const { className, display, visible } = this.props;
         const cn = mergeClassName(
           this.props,
-          [].concat(display).join(' ').split(' ').filter(name => !!name).map(name => 'd-' + name)
+          [].concat(display).join(' ').split(' ')
+            .filter(name => !!name)
+            .map(name => 'd-' + name)
+            .concat(typeof visible === 'boolean'? (visible? 'visible' : 'invisible') : [])
         );
-        const p = JS.lessProps(this.props, ['className', 'display']);
+console.log('cn and display', cn, display);
+        const p = JS.lessProps(this.props, ['className', 'display', 'visible']);
 
         return <Comp {...p} className={cn} />
       }

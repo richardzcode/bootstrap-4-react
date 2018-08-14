@@ -12,11 +12,11 @@ class Col extends Component {
     const cn = mergeClassName(
       this.props,
       [
-        xs? 'col-xs-' + xs : '',
-        sm? 'col-sm-' + sm : '',
-        md? 'col-md-' + md : '',
-        lg? 'col-lg-' + lg : '',
-        xl? 'col-xl-' + xl : '',
+        xs? 'col-xs' + (typeof xs === 'boolean'? '' : '-' + xs) : '',
+        sm? 'col-sm' + (typeof sm === 'boolean'? '' : '-' + sm) : '',
+        md? 'col-md' + (typeof md === 'boolean'? '' : '-' + md) : '',
+        lg? 'col-lg' + (typeof lg === 'boolean'? '' : '-' + lg) : '',
+        xl? 'col-xl' + (typeof xl === 'boolean'? '' : '-' + xl) : '',
         order? 'order-' + order : ''
       ]
     );
