@@ -16,7 +16,7 @@ export function withAlign() {
         );
         const p = JS.lessProps(this.props, ['className', 'align']);
 
-        return <Comp {...p} className={cn} />
+        return <Comp {...p} className={cn}>{this.props.children}</Comp>
       }
     }
   }

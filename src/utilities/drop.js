@@ -18,7 +18,7 @@ export function withDrop() {
         );
         const p = JS.lessProps(this.props, ['className', 'dropup', 'dropleft', 'dropright']);
 
-        return <Comp {...p} className={cn} />
+        return <Comp {...p} className={cn}>{this.props.children}</Comp>
       }
     }
   }

@@ -17,7 +17,7 @@ export function withDisplay() {
         );
         const p = JS.lessProps(this.props, ['className', 'display', 'visible']);
 
-        return <Comp {...p} className={cn} />
+        return <Comp {...p} className={cn}>{this.props.children}</Comp>
       }
     }
   }

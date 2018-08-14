@@ -21,7 +21,7 @@ export function withSizing() {
         );
         const p = JS.lessProps(this.props, ['className', 'w', 'h']);
 
-        return <Comp {...p} className={cn.join(' ')} />
+        return <Comp {...p} className={cn.join(' ')}>{this.props.children}</Comp>
       }
     }
   }

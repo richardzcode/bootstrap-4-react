@@ -9,7 +9,8 @@ import {
   withSizing,
   withBorder,
   withActive,
-  withScreenreaders
+  withScreenreaders,
+  withTooltip
 } from '../../utilities';
 
 export function domStack(Comp) {
@@ -23,7 +24,8 @@ export function domStack(Comp) {
       withSizing(),
       withBorder(),
       withActive(),
-      withScreenreaders()
+      withScreenreaders(),
+      withTooltip()
     ]
   );
 }

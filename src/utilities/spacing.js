@@ -33,7 +33,7 @@ export function withSpacing() {
         );
         const p = JS.lessProps(this.props, ['className'].concat(propertyNames('m'), propertyNames('p')));
 
-        return <Comp {...p} className={cn.join(' ')} />
+        return <Comp {...p} className={cn.join(' ')}>{this.props.children}</Comp>
       }
     }
   }

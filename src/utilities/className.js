@@ -16,7 +16,7 @@ export function withClassName(name) {
         const cn = [].concat(className || [], (typeof name === 'function'? name(this.props) : name));
         const p = JS.lessProps(this.props, 'className');
 
-        return <Comp {...p} className={cn.join(' ')} />
+        return <Comp {...p} className={cn.join(' ')}>{this.props.children}</Comp>
       }
     }
   }

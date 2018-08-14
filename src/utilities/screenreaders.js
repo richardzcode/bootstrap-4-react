@@ -14,7 +14,7 @@ export function withScreenreaders() {
         );
         const p = JS.lessProps(this.props, ['className', 'srOnly']);
 
-        return <Comp {...p} className={cn} />
+        return <Comp {...p} className={cn}>{this.props.children}</Comp>
       }
     }
   }
