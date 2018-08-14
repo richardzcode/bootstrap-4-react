@@ -10,7 +10,8 @@ export function withTooltip() {
         const p = JS.lessProps(this.props, ['tooltip', 'title']);
 
         const is_boolean = (typeof tooltip === 'boolean');
-        const t_title = is_boolean? title : tooltip.title || tooltip.html || tooltip;
+        const is_string = (typeof tooltip === 'string');
+        const t_title = is_boolean? title : (is_string? tooltip : tooltip.title || tooltip.html);
         if (!is_boolean && tooltip.placement) { p['data-placement'] = tooltip.placement; }
         if (!is_boolean && tooltip.html) { p['data-html'] = 'true'; }
 

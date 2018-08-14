@@ -10,6 +10,7 @@ export { withActive } from './active';
 export { withDrop } from './drop';
 export { withScreenreaders } from './screenreaders';
 export { withTooltip } from './tooltip';
+export { withPopover } from './popover';
 
 export function stack(Comp, funcs) {
   if (!funcs) { return Comp; }

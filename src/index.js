@@ -5,6 +5,17 @@ const logger = new Logger('Bootstrap');
 
 export * from './components';
 
+function popover(selector, options) {
+  selector = selector || '[data-toggle="popover"]';
+  if ($) {
+    $(selector).popover(options)
+  } else {
+    logger.warn('no jQuery available');
+  }
+
+  return this;
+}
+
 function tooltip(selector, options) {
   selector = selector || '[data-toggle="tooltip"]';
   if ($) {
@@ -12,9 +23,12 @@ function tooltip(selector, options) {
   } else {
     logger.warn('no jQuery available');
   }
+
+  return this;
 }
 
 const Bootstrap = {
+  popover,
   tooltip
 }
 

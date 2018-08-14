@@ -10,6 +10,7 @@ import {
   withBorder,
   withActive,
   withScreenreaders,
+  withPopover,
   withTooltip
 } from '../../utilities';
 
@@ -25,6 +26,7 @@ export function domStack(Comp) {
       withBorder(),
       withActive(),
       withScreenreaders(),
+      withPopover(),
       withTooltip()
     ]
   );
