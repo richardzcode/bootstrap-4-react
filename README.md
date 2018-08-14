@@ -15,7 +15,7 @@ The goal of this library is to simplify common usages of Bootstrap 4 in React. D
 npm install --save bootstrap-4-react
 ```
 
-Then start using components, no additional CSS/JS needed.
+Then start adding components, no additional CSS/JS needed.
 
 ```
 import React, { Component } from 'react';
