@@ -9,10 +9,23 @@ Bootstrap 4 React components.
 
 The goal of this library is to simplify common usages of Bootstrap 4 in React. Developers can always fall back to Bootstrap original syntaxes for advanced cases.
 
-## Installation
+## Get started
 
 ```
 npm install --save bootstrap-4-react
+```
+
+Then start using components, no additional CSS/JS needed.
+
+```
+import React, { Component } from 'react';
+import { Alert } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return <Alert primary>Primary Alert</Alert>
+  }
+}
 ```
 
 ## Components
