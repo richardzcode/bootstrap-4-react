@@ -8,7 +8,7 @@ const breakpoints = [ 'xs', 'sm', 'md', 'lg', 'xl' ];
 
 class Col extends Component {
   render() {
-    const { xs, sm, md, lg, xl, order } = this.props;
+    const { xs, sm, md, lg, xl } = this.props;
     const cn = mergeClassName(
       this.props,
       [
@@ -16,11 +16,10 @@ class Col extends Component {
         sm? 'col-sm' + (typeof sm === 'boolean'? '' : '-' + sm) : '',
         md? 'col-md' + (typeof md === 'boolean'? '' : '-' + md) : '',
         lg? 'col-lg' + (typeof lg === 'boolean'? '' : '-' + lg) : '',
-        xl? 'col-xl' + (typeof xl === 'boolean'? '' : '-' + xl) : '',
-        order? 'order-' + order : ''
+        xl? 'col-xl' + (typeof xl === 'boolean'? '' : '-' + xl) : ''
       ]
     );
-    const p = JS.lessProps(this.props, ['className', 'col', 'order'].concat(breakpoints));
+    const p = JS.lessProps(this.props, ['className', 'col'].concat(breakpoints));
 
     return <BDiv {...p} className={cn}>{this.props.children}</BDiv>
   }
