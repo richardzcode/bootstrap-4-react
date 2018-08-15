@@ -421,6 +421,16 @@ export default class App extends Component {
           <Col border>Column</Col>
           <Col border>Column</Col>
         </Row>
+        <Row>
+          <Col sm="8" border>col-sm-8</Col>
+          <Col sm="4" border>col-sm-4</Col>
+        </Row>
+        <Row>
+          <Col col="6 md-3" border>col-6 md-3</Col>
+          <Col col="6 md-3" border>col-6 md-3</Col>
+          <Col col="6 md-3" border>col-6 md-3</Col>
+          <Col col="6 md-3" border>col-6 md-3</Col>
+        </Row>
       </Container>
     )
   }

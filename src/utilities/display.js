@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { mergeClassName } from './className';
+import { mergeClassName, flatClassName } from './className';
 
 export function withDisplay() {
   return function(Comp) {
@@ -10,10 +10,10 @@ export function withDisplay() {
         const { className, display, visible } = this.props;
         const cn = mergeClassName(
           this.props,
-          [].concat(display).join(' ').split(' ')
-            .filter(name => !!name)
-            .map(name => 'd-' + name)
-            .concat(typeof visible === 'boolean'? (visible? 'visible' : 'invisible') : [])
+          [
+            flatClassName(display, 'd-'),
+            typeof visible === 'boolean'? (visible? 'visible' : 'invisible') : ''
+          ]
         );
         const p = JS.lessProps(this.props, ['className', 'display', 'visible']);
 

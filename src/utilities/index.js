@@ -1,4 +1,4 @@
-export { withClassName, mergeClassName } from './className';
+export { withClassName, flatClassName, mergeClassName } from './className';
 export { withPurpose } from './purpose';
 export { withColor } from './color';
 export { withDisplay } from './display';

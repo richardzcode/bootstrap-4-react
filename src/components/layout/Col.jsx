@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { mergeClassName, withClassName } from '../../utilities';
+import { mergeClassName, flatClassName, withClassName } from '../../utilities';
 import { BDiv } from '../dom';
 
 const breakpoints = [ 'xs', 'sm', 'md', 'lg', 'xl' ];
@@ -27,7 +27,7 @@ class Col extends Component {
 
 function colClassName(props) {
   const { col } = props;
-  return col? 'col-' + col : 'col';
+  return col? flatClassName(col, 'col-') : 'col';
 }
 
 export default withClassName(colClassName)(Col);
