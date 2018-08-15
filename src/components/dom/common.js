@@ -13,6 +13,7 @@ import {
   withPopover,
   withTooltip,
   withFlex,
+  withFloat
 } from '../../utilities';
 
 export function domStack(Comp) {
@@ -29,7 +30,8 @@ export function domStack(Comp) {
       withScreenreaders(),
       withPopover(),
       withTooltip(),
-      withFlex()
+      withFlex(),
+      withFloat()
     ]
   );
 }

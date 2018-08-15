@@ -8,6 +8,13 @@ export function mergeClassName(props, className) {
     .join(' ');
 }
 
+export function flatClassName(name, prefix) {
+  if (!name || !name.trim()) { return ''; }
+  return [].concat(name).join(' ').split(' ')
+    .map(item => prefix? prefix + item : item)
+    .join(' ');
+}
+
 export function withClassName(name) {
   return function(Comp) {
     return class extends Component {

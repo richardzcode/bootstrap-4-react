@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { mergeClassName } from './className';
-
-function flatWithPrefix(val, prefix) {
-  return [].concat(val).join(' ').split(' ')
-    .map(item => prefix + item)
-    .join(' ');
-}
+import { mergeClassName, flatClassName } from './className';
 
 export function withFlex() {
   return function(Comp) {
@@ -26,14 +20,14 @@ export function withFlex() {
         const cn = mergeClassName(
           this.props,
           [
-            flex? flatWithPrefix(flex, 'flex-') : '',
-            justifyContent? flatWithPrefix(justifyContent, 'justify-content-') : '',
-            alignItems? flatWithPrefix(alignItems, 'align-items-') : '',
-            alignContent? flatWithPrefix(alignContent, 'align-content-') : '',
-            alignSelf? flatWithPrefix(alignSelf, 'align-self-') : '',
-            flexGrow? flatWithPrefix(flexGrow, 'flex-grow-') : '',
-            flexShrink? flatWithPrefix(flexShrink, 'flex-shrink-') : '',
-            order? flatWithPrefix(order, 'order-') : ''
+            flatClassName(flex, 'flex-'),
+            flatClassName(justifyContent, 'justify-content-'),
+            flatClassName(alignItems, 'align-items-'),
+            flatClassName(alignContent, 'align-content-'),
+            flatClassName(alignSelf, 'align-self-'),
+            flatClassName(flexGrow, 'flex-grow-'),
+            flatClassName(flexShrink, 'flex-shrink-'),
+            flatClassName(order, 'order-')
           ]
         );
         const p = JS.lessProps(
