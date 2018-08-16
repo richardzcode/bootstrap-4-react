@@ -1,27 +1,25 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-function toClassName(props) {
-  return ['w', 'h']
-    .map(name => {
-      return { name: name, value: props[name] }
-    })
-    .filter(pair => !!pair.value)
-    .map(pair => pair.name + '-' + pair.value);
-}
+import { mergeClassName, flatClassName } from './className';
 
 export function withSizing() {
   return function(Comp) {
     return class extends Component {
       render() {
-        const { className } = this.props;
-        const cn = [].concat(
-          className || [],
-          toClassName(this.props)
+        const { w, h, mw, mh } = this.props;
+        const cn = mergeClassName(
+          this.props,
+          [
+            w? 'w-' + w : '',
+            h? 'h-' + h : '',
+            mw? 'mw-' + mw : '',
+            mh? 'mh-' + mh : ''
+          ]
         );
-        const p = JS.lessProps(this.props, ['className', 'w', 'h']);
+        const p = JS.lessProps(this.props, ['className', 'w', 'h', 'mw', 'mh']);
 
-        return <Comp {...p} className={cn.join(' ')}>{this.props.children}</Comp>
+        return <Comp {...p} className={cn}>{this.props.children}</Comp>
       }
     }
   }
