@@ -89,7 +89,7 @@ class App extends Component {
           <Jumbotron text="center" style={style.jumbotron}>
             <Container>
               <BH1 style={style.jumbotron.heading}>Album example</BH1>
-              <Lead text="muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</Lead>
+              <Lead text="muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don&#39;t simply skip over it entirely.</Lead>
             </Container>
             <p>
               <Button primary mx="1" my="2">Main call to action</Button>
