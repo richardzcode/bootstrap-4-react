@@ -8,7 +8,7 @@ const breakpoints = [ 'xs', 'sm', 'md', 'lg', 'xl' ];
 
 class Col extends Component {
   render() {
-    const { xs, sm, md, lg, xl } = this.props;
+    const { xs, sm, md, lg, xl, offset } = this.props;
     const cn = mergeClassName(
       this.props,
       [
@@ -16,18 +16,20 @@ class Col extends Component {
         sm? 'col-sm' + (typeof sm === 'boolean'? '' : '-' + sm) : '',
         md? 'col-md' + (typeof md === 'boolean'? '' : '-' + md) : '',
         lg? 'col-lg' + (typeof lg === 'boolean'? '' : '-' + lg) : '',
-        xl? 'col-xl' + (typeof xl === 'boolean'? '' : '-' + xl) : ''
+        xl? 'col-xl' + (typeof xl === 'boolean'? '' : '-' + xl) : '',
+        flatClassName(offset, 'offset-')
       ]
     );
-    const p = JS.lessProps(this.props, ['className', 'col'].concat(breakpoints));
+    const p = JS.lessProps(this.props, ['className', 'col', 'offset'].concat(breakpoints));
 
     return <BDiv {...p} className={cn}>{this.props.children}</BDiv>
   }
 }
 
 function colClassName(props) {
-  const { col } = props;
-  return col? flatClassName(col, 'col-') : 'col';
+  const { col, xs, sm, md, lg, xl } = props;
+  const hasSpecific = xs || sm || md || lg || xl;
+  return col? flatClassName(col, 'col-') : (hasSpecific? '' : 'col');
 }
 
 export default withClassName(colClassName)(Col);

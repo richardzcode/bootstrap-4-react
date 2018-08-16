@@ -46,6 +46,7 @@ export default class App extends Component {
 - [InputGroup](#inputgroup)
 - [Jumbotron](#jumbotron)
 - [Lead](#lead)
+- [List](#list)
 - [ListGroup](#listgroup)
 - [Media](#media)
 - [Modal](#modal)
@@ -517,6 +518,25 @@ export default class App extends Component {
   render() {
     return (
       <Lead>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</Lead>
+    )
+  }
+}
+```
+
+### List
+
+```
+import React, { Component } from 'react';
+import { List, BA } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <List unstyled>
+        <List.Item><BA href="#" text="white">Follow on Twitter</BA></List.Item>
+        <List.Item><BA href="#" text="white">Like on Facebook</BA></List.Item>
+        <List.Item><BA href="#" text="white">Email me</BA></List.Item>
+      </List>
     )
   }
 }
