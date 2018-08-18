@@ -47,7 +47,7 @@ class App extends Component {
                 height="72"
               />
               <BH2>Checkout form</BH2>
-              <Lead>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</Lead>
+              <Lead>Below is an example form built entirely with Bootstrap&#39;s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</Lead>
             </BDiv>
 
             <Row>
