@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { domStack } from './common';
+import { stack, domStack } from '../../utilities';
 
 class H6 extends Component {
   render() {
@@ -8,4 +8,4 @@ class H6 extends Component {
   }
 }
 
-export default domStack(H6);
+export default stack(H6, domStack);

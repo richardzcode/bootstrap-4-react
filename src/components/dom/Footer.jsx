@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { domStack } from './common';
+import { stack, domStack } from '../../utilities';
 
 class Footer extends Component {
   render() {
@@ -8,4 +8,4 @@ class Footer extends Component {
   }
 }
 
-export default domStack(Footer);
+export default stack(Footer, domStack);

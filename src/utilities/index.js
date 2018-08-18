@@ -1,19 +1,20 @@
-export { withClassName, flatClassName, mergeClassName } from './className';
-export { withPurpose } from './purpose';
-export { withColor } from './color';
-export { withDisplay } from './display';
-export { withAlign } from './align';
-export { withSpacing } from './spacing';
-export { withSizing } from './sizing';
-export { withBorder } from './border';
-export { withActive } from './active';
-export { withDrop } from './drop';
-export { withScreenreaders } from './screenreaders';
-export { withTooltip } from './tooltip';
-export { withPopover } from './popover';
-export { withFlex } from './flex';
-export { withFloat } from './float';
-export { withShadow } from './shadow';
+import { withClassName, flatClassName, mergeClassName } from './className';
+import { withPurpose } from './purpose';
+import { withColor } from './color';
+import { withDisplay } from './display';
+import { withAlign } from './align';
+import { withSpacing } from './spacing';
+import { withSizing } from './sizing';
+import { withBorder } from './border';
+import { withActive } from './active';
+import { withDrop } from './drop';
+import { withScreenreaders } from './screenreaders';
+import { withTooltip } from './tooltip';
+import { withPopover } from './popover';
+import { withFlex } from './flex';
+import { withFloat } from './float';
+import { withShadow } from './shadow';
+import { withFont } from './font';
 
 export function stack(Comp, funcs) {
   if (!funcs) { return Comp; }
@@ -25,3 +26,43 @@ export function stack(Comp, funcs) {
 
   return C;
 }
+
+const domStack = [
+  withColor(),
+  withDisplay(),
+  withAlign(),
+  withSpacing(),
+  withSizing(),
+  withBorder(),
+  withActive(),
+  withScreenreaders(),
+  withPopover(),
+  withTooltip(),
+  withFlex(),
+  withFloat(),
+  withShadow(),
+  withFont()
+]
+
+export {
+  domStack,
+  withClassName,
+  flatClassName,
+  mergeClassName,
+  withPurpose,
+  withColor,
+  withDisplay,
+  withAlign,
+  withSpacing,
+  withSizing,
+  withBorder,
+  withActive,
+  withDrop,
+  withScreenreaders,
+  withTooltip,
+  withPopover,
+  withFlex,
+  withFloat,
+  withShadow,
+  withFont
+};

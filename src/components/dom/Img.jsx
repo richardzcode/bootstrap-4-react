@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { domStack } from './common';
-import { mergeClassName } from '../../utilities';
+import { stack, domStack, mergeClassName } from '../../utilities';
 
 class Img extends Component {
   render() {
@@ -20,4 +19,4 @@ class Img extends Component {
   }
 }
 
-export default domStack(Img);
+export default stack(Img, domStack);

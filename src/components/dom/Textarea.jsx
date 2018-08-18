@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { domStack } from './common';
+import { stack, domStack } from '../../utilities';
 
 class Textarea extends Component {
   render() {
@@ -8,4 +8,4 @@ class Textarea extends Component {
   }
 }
 
-export default domStack(Textarea);
+export default stack(Textarea, domStack);

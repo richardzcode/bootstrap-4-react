@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { domStack } from './common';
+import { stack, domStack } from '../../utilities';
 
 class Figure extends Component {
   render() {
@@ -8,4 +8,4 @@ class Figure extends Component {
   }
 }
 
-export default domStack(Figure);
+export default stack(Figure, domStack);

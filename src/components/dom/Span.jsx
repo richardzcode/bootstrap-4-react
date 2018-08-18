@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { domStack } from './common';
+import { stack, domStack } from '../../utilities';
 
 class Span extends Component {
   render() {
@@ -8,4 +8,4 @@ class Span extends Component {
   }
 }
 
-export default domStack(Span);
+export default stack(Span, domStack);

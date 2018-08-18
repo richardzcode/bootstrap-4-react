@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { domStack } from './common';
+import { stack, domStack } from '../../utilities';
 
 class Blockquote extends Component {
   render() {
@@ -8,4 +8,4 @@ class Blockquote extends Component {
   }
 }
 
-export default domStack(Blockquote);
+export default stack(Blockquote, domStack);
