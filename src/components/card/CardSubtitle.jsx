@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { stack, withClassName, withColor, withSpacing } from '../../utilities';
+import { stack, domStack, withClassName } from '../../utilities';
 
 class CardSubtitle extends Component {
   render() {
-    const h = this.props.h || 6;
-    const p = JS.lessProps(this.props, 'h');
+    const as = this.props.as || 'h5';
+    const p = JS.lessProps(this.props, 'as');
     return React.createElement(
-      'h' + h,
+      as,
       p,
       p.children
     );
@@ -17,9 +17,5 @@ class CardSubtitle extends Component {
 
 export default stack(
   CardSubtitle,
-  [
-    withClassName('card-subtitle'),
-    withColor(),
-    withSpacing()
-  ]
+  domStack.concat(withClassName('card-subtitle'))
 );
