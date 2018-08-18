@@ -363,8 +363,8 @@ export default class App extends Component {
           <Form.Group>
             <label htmlFor="exampleTextarea">Example textarea</label>
             <Form.Textarea id="exampleTextarea" valid={true} />
-            <Form.Feedback>Invalid feedback</Form.Feedback>
-            <Form.Feedback valid={true}>Valid feedback</Form.Feedback>
+            <Form.Feedback invalid>Invalid feedback</Form.Feedback>
+            <Form.Feedback>Valid feedback</Form.Feedback>
           </Form.Group>
           <Form.Group>
             <label htmlFor="exampleRange">Example Range</label>

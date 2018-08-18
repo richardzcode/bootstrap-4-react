@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { withClassName } from '../../utilities';
+import { mergeClassName, withClassName } from '../../utilities';
 import { BForm } from '../dom';
 
 class Form extends Component {
   render() {
-    const p = JS.lessProps(this.props, 'inline');
+    const { needsValidation } = this.props;
+    const cn = mergeClassName(this.props, needsValidation? 'needs-validation' : '');
+    const p = JS.lessProps(this.props, ['className', 'inline', 'needsValidation']);
 
-    return <BForm {...p}>{this.props.children}</BForm>
+    return <BForm {...p} className={cn}>{this.props.children}</BForm>
   }
 }
 

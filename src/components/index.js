@@ -19,6 +19,7 @@ export { default as Media } from './media';
 export { default as Modal } from './modal';
 export { default as Nav } from './nav';
 export { default as Navbar } from './navbar';
+export { default as Table } from './table';
 
 export * from './dom';
 export * from './layout';
