@@ -20,14 +20,14 @@ export function withFlex() {
         const cn = mergeClassName(
           this.props,
           [
-            flatClassName(flex, 'flex-'),
-            flatClassName(justifyContent, 'justify-content-'),
-            flatClassName(alignItems, 'align-items-'),
-            flatClassName(alignContent, 'align-content-'),
-            flatClassName(alignSelf, 'align-self-'),
-            flatClassName(flexGrow, 'flex-grow-'),
-            flatClassName(flexShrink, 'flex-shrink-'),
-            flatClassName(order, 'order-')
+            flatClassName(flex, 'flex'),
+            flatClassName(justifyContent, 'justify-content'),
+            flatClassName(alignItems, 'align-items'),
+            flatClassName(alignContent, 'align-content'),
+            flatClassName(alignSelf, 'align-self'),
+            flatClassName(flexGrow, 'flex-grow'),
+            flatClassName(flexShrink, 'flex-shrink'),
+            flatClassName(order, 'order')
           ]
         );
         const p = JS.lessProps(

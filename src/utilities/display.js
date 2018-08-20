@@ -11,7 +11,7 @@ export function withDisplay() {
         const cn = mergeClassName(
           this.props,
           [
-            flatClassName(display, 'd-'),
+            flatClassName(display, 'd'),
             typeof visible === 'boolean'? (visible? 'visible' : 'invisible') : ''
           ]
         );

@@ -17,7 +17,7 @@ class Col extends Component {
         md? 'col-md' + (typeof md === 'boolean'? '' : '-' + md) : '',
         lg? 'col-lg' + (typeof lg === 'boolean'? '' : '-' + lg) : '',
         xl? 'col-xl' + (typeof xl === 'boolean'? '' : '-' + xl) : '',
-        flatClassName(offset, 'offset-')
+        flatClassName(offset, 'offset')
       ]
     );
     const p = JS.lessProps(this.props, ['className', 'col', 'offset'].concat(breakpoints));
@@ -29,7 +29,7 @@ class Col extends Component {
 function colClassName(props) {
   const { col, xs, sm, md, lg, xl } = props;
   const hasSpecific = xs || sm || md || lg || xl;
-  return col? flatClassName(col, 'col-') : (hasSpecific? '' : 'col');
+  return col? flatClassName(col, 'col') : (hasSpecific? '' : 'col');
 }
 
 export default withClassName(colClassName)(Col);

@@ -31,7 +31,7 @@ export function withPurpose(prefix) {
     return class extends Component {
       render() {
         const { className } = this.props;
-        const cn = [].concat(className || [], purposeClassName(this.props, prefix));
+        const cn = [].concat(purposeClassName(this.props, prefix), className || []);
         const p = JS.lessProps(this.props, purposes.concat('className'));
 
         return <Comp {...p} className={cn.join(' ')}>{this.props.children}</Comp>

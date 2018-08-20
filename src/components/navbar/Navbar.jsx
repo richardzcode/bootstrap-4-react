@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { stack, mergeClassName, withClassName, withPurpose } from '../../utilities';
-import { BNav } from '../dom';
+import { stack, mergeClassName, flatClassName, withClassName, withPurpose } from '../../utilities';
+import { BNav, BHeader } from '../dom';
 
 function expandClassName(expand) {
   if (!expand) { return []; }
@@ -13,11 +13,13 @@ function expandClassName(expand) {
 
 class Navbar extends Component {
   render() {
-    const { expand } = this.props;
-    const cn = mergeClassName(this.props, expandClassName(expand));
-    const p = JS.lessProps(this.props, ['className', 'expand']);
+    const { expand, as } = this.props;
+    const cn = mergeClassName(this.props, flatClassName(expand, 'navbar-expand'));
+    const p = JS.lessProps(this.props, ['className', 'expand', 'as']);
 
-    return <BNav {...p} className={cn}>{this.props.children}</BNav>
+    return (as === 'header')
+      ? <BHeader {...p} className={cn}>{this.props.children}</BHeader>
+      : <BNav {...p} className={cn}>{this.props.children}</BNav>
   }
 }
 
