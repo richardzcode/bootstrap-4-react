@@ -11,7 +11,9 @@ export function withShadow() {
         const cn = mergeClassName(this.props, shadow? 'shadow-' + shadow : '');
         const p = JS.lessProps(this.props, ['className', 'shadow']);
 
-        return <Comp {...p} className={cn}>{this.props.children}</Comp>
+        return cn
+          ? <Comp {...p} className={cn}>{this.props.children}</Comp>
+          : <Comp {...p}>{this.props.children}</Comp>
       }
     }
   }

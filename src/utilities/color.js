@@ -24,10 +24,12 @@ export function withColor() {
           className || [],
           toClassName('text', text),
           toClassName('bg', bg)
-        );
+        ).join(' ');
         const p = JS.lessProps(this.props, ['className', 'text', 'bg']);
 
-        return <Comp {...p} className={cn.join(' ')}>{this.props.children}</Comp>
+        return cn
+          ? <Comp {...p} className={cn}>{this.props.children}</Comp>
+          : <Comp {...p}>{this.props.children}</Comp>
       }
     }
   }

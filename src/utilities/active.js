@@ -17,7 +17,9 @@ export function withActive() {
         );
         const p = JS.lessProps(this.props, ['className', 'active', 'disabled']);
 
-        return <Comp {...p} className={cn}>{this.props.children}</Comp>
+        return cn
+          ? <Comp {...p} className={cn}>{this.props.children}</Comp>
+          : <Comp {...p}>{this.props.children}</Comp>
       }
     }
   }

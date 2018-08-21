@@ -45,7 +45,9 @@ export function withFlex() {
           ]
         );
 
-        return <Comp {...p} className={cn}>{this.props.children}</Comp>
+        return cn
+          ? <Comp {...p} className={cn}>{this.props.children}</Comp>
+          : <Comp {...p}>{this.props.children}</Comp>
       }
     }
   }

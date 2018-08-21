@@ -10,7 +10,9 @@ class NavLink extends Component {
     const cn = mergeClassName(this.props, dropdownToggle? 'dropdown-toggle' : '');
     const p = JS.lessProps(this.props, ['className', 'dropdownToggle']);
 
-    return <BA {...p} className={cn} data-toggle={dropdownToggle? 'dropdown' : ''}>{this.props.children}</BA>
+    return dropdownToggle
+      ? <BA {...p} className={cn} data-toggle='dropdown'>{this.props.children}</BA>
+      : <BA {...p} className={cn}>{this.props.children}</BA>
   }
 }
 

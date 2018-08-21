@@ -19,7 +19,9 @@ export function withSizing() {
         );
         const p = JS.lessProps(this.props, ['className', 'w', 'h', 'mw', 'mh']);
 
-        return <Comp {...p} className={cn}>{this.props.children}</Comp>
+        return cn
+          ? <Comp {...p} className={cn}>{this.props.children}</Comp>
+          : <Comp {...p}>{this.props.children}</Comp>
       }
     }
   }

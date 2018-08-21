@@ -11,7 +11,9 @@ export function withFloat() {
         const cn = mergeClassName(this.props, float? flatClassName(float, 'float') : '');
         const p = JS.lessProps(this.props, ['className', 'float']);
 
-        return <Comp {...p} className={cn}>{this.props.children}</Comp>
+        return cn
+          ? <Comp {...p} className={cn}>{this.props.children}</Comp>
+          : <Comp {...p}>{this.props.children}</Comp>
       }
     }
   }
