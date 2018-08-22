@@ -65,7 +65,7 @@ export default class Navigator extends Component {
         <Navbar.Nav flex="row" ml="md-auto" display="none md-flex">
           <Nav.ItemLink
             p="2"
-            href="https://github.com/richardzcode/bootstrap-4-react"
+            href="https://github.com/richardzcode/bootstrap-4-react/tree/master/site"
             target="_blank"
           >
             {sourceCode}
