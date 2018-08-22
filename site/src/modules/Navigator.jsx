@@ -49,15 +49,15 @@ export default class Navigator extends Component {
         <div className="navbar-nav-scroll">
           <Navbar.Nav flex="row">
             <Nav.ItemLink
-              href="/"
+              href="#"
               active={path === '/'}
             >Home</Nav.ItemLink>
             <Nav.ItemLink
-              href="/#documentation"
+              href="#documentation"
               active={path.startsWith('documentation')}
             >Documentation</Nav.ItemLink>
             <Nav.ItemLink
-              href="/#example"
+              href="#example"
               active={path === 'example'}
             >Example</Nav.ItemLink>
           </Navbar.Nav>
