@@ -71,6 +71,23 @@
   margin-top: 1rem;
 }
 
+.bd-example button,
+.bd-example span,
+.bd-example label,
+.bd-example input,
+.bd-example a
+{
+  margin-left: .25rem;
+  margin-right: .25rem;
+}
+
+.bd-example .btn-group button,
+.bd-example .btn-group label
+{
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media (min-width: 768px) {
   .bd-navbar {
     position: -webkit-sticky!important;

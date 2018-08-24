@@ -6,18 +6,23 @@ import { BDiv } from './dom';
 
 class ButtonGroup extends Component {
   render() {
-    const { lg, sm } = this.props;
+    const { lg, sm, toggle } = this.props;
     const cn = mergeClassName(
       this.props,
-      lg? 'btn-group-lg' : '',
-      sm? 'btn-group-sm' : ''
+      [
+        lg? 'btn-group-lg' : '',
+        sm? 'btn-group-sm' : '',
+        toggle? 'btn-group-toggle' : ''
+      ]
     );
     const p = JS.lessProps(
       this.props,
-      ['className', 'role', 'lg', 'sm', 'vertical']
+      ['className', 'role', 'lg', 'sm', 'vertical', 'toggle']
     );
 
-    return <BDiv role="group" className={cn} {...p}>{this.props.children}</BDiv>
+    return toggle
+      ? <BDiv role="group" className={cn} {...p} data-toggle="buttons">{this.props.children}</BDiv>
+      : <BDiv role="group" className={cn} {...p}>{this.props.children}</BDiv>
   }
 }
 

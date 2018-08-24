@@ -25,3 +25,6 @@ class Docs {
 
 const docs = new Docs();
 export default docs;
+
+const Alert1 = components.Alert1;
+export { Alert1 };

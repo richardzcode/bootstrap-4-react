@@ -1,7 +1,3 @@
-## Blockquote
-
-```
-renderComp:blockquote
 import React, { Component } from 'react';
 import { Blockquote } from 'bootstrap-4-react';
 
@@ -19,4 +15,3 @@ export default class App extends Component {
     )
   }
 }
-```

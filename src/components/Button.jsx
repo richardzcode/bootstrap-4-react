@@ -2,31 +2,46 @@ import React, { Component } from 'react';
 import { JS } from 'fsts';
 
 import { stack, withClassName, mergeClassName, withPurpose } from '../utilities';
-import { BButton, BA } from './dom';
+import { BButton, BA, BInput, BLabel } from './dom';
 
 class Button extends Component {
   render() {
-    const { block, active, lg, sm, as } = this.props;
+    const { block, active, disabled, lg, sm, as } = this.props;
     const cn = mergeClassName(
       this.props,
       [
         lg? 'btn-lg' : '',
         sm? 'btn-sm' : '',
         block? 'btn-block' : '',
-        active? 'active' : ''
+        active? 'active' : '',
+        (as && as === 'a' && disabled)? 'disabled' : ''
       ]
     );
-    const p = JS.lessProps(
+    let p = JS.lessProps(
       this.props,
       ['className', 'block', 'outline', 'lg', 'sm', 'as']
     );
+    if (as && as === 'a' && disabled) { p = JS.lessProps(p, 'disabled'); }
     if (active) { p['aria-pressed'] = 'true' }
 
-    return (
-      as && as === 'a'
-      ? <BA role="button" className={cn} {...p}>{this.props.children}</BA>
-      : <BButton className={cn} {...p}>{this.props.children}</BButton>
-    )
+    if (!as) {
+      return (
+        <BButton className={cn} {...p}>{this.props.children}</BButton>
+      )
+    }
+
+    switch(as) {
+      case 'a':
+        return disabled
+          ? <BA role="button" className={cn} {...p} aria-disabled="true">{this.props.children}</BA>
+          : <BA role="button" className={cn} {...p}>{this.props.children}</BA>
+      case 'input':
+        return <BInput className={cn} {...p}>{this.props.children}</BInput>
+      case 'label':
+        return <BLabel className={cn} {...p}>{this.props.children}</BLabel>
+      default:
+        return <BButton className={cn} {...p}>{this.props.children}</BButton>
+    }
   }
 }
 
