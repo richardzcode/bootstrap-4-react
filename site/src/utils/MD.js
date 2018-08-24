@@ -55,9 +55,19 @@ function renderComp(lines) {
   }).join('');
 }
 
+function blockquote(md) {
+  md.renderer.rules.blockquote_open = function(tokens, idx, options, env) {
+    return '<blockquote class="bd-callout">';
+  }
+  md.renderer.rules.blockquote_close = function(tokens, idx, options, env) {
+    return '</blockquote>';
+  }
+}
+
 const md = new Remarkable('full', { html: true });
 md.use(heading);
 md.use(fence);
+md.use(blockquote);
 
 export default class MD {
   render(content) {

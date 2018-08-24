@@ -1,33 +1,24 @@
+import quick_start from './quick_start';
 import alert from './alert';
-import badge_1 from './badge_1';
-import badge_2 from './badge_2';
-import badge_3 from './badge_3';
+import badge from './badge';
 import blockquote from './blockquote';
-import button_1 from './button_1';
-import button_2 from './button_2';
-import button_3 from './button_3';
-import button_4 from './button_4';
-import button_5 from './button_5';
-import button_6 from './button_6';
-import button_7 from './button_7';
-import button_8 from './button_8';
-import button_9 from './button_9';
+import button from './button';
+import button_group from './button_group';
+import card from './card';
 
 const docComponents = {
+  quick_start,
   alert,
-  badge_1,
-  badge_2,
-  badge_3,
-  blockquote,
-  button_1,
-  button_2,
-  button_3,
-  button_4,
-  button_5,
-  button_6,
-  button_7,
-  button_8,
-  button_9
+  blockquote
 };
+
+function copyProperties(from) {
+  Object.keys(from).forEach(key => docComponents[key] = from[key]);
+}
+
+copyProperties(badge);
+copyProperties(button);
+copyProperties(button_group);
+copyProperties(card);
 
 export default docComponents;

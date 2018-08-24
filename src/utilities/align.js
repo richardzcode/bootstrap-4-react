@@ -10,7 +10,7 @@ export function withAlign() {
         const { className, align } = this.props;
         const cn = mergeClassName(
           this.props,
-          flatClassName(align, 'align-')
+          flatClassName(align, 'align')
         );
         const p = JS.lessProps(this.props, ['className', 'align']);
 

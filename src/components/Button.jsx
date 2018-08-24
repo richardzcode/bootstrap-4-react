@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { stack, withClassName, mergeClassName, withPurpose } from '../utilities';
+import { stack, withClassName, mergeClassName, withPurpose, withDrop } from '../utilities';
 import { BButton, BA, BInput, BLabel } from './dom';
 
 class Button extends Component {
@@ -54,6 +54,7 @@ export default stack(
   Button,
   [
     withClassName('btn'),
-    withPurpose(purposePrefix)
+    withPurpose(purposePrefix),
+    withDrop()
   ]
 );
