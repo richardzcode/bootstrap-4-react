@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button } from 'bootstrap-4-react';
+import { Card, ListGroup } from 'bootstrap-4-react';
 
 const img_src = 'data:image/svg+xml;charset=UTF-8,' +
   '<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"286"%20height%3D"180"%20viewBox%3D"0%200%20286%20180"%20preserveAspectRatio%3D"none">' +
@@ -12,13 +12,21 @@ export default class App extends Component {
   render() {
     return (
       <Card style={{ width: '18rem' }}>
-        <Card.Image src={img_src} />
+        <Card.Image src={img_src} top/>
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            Some quick example text to build on the card title and make up the bulk of the card content.
           </Card.Text>
-          <Button primary>Go somewhere</Button>
+        </Card.Body>
+        <ListGroup flush>
+          <ListGroup.Item>Cras justo odio</ListGroup.Item>
+          <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+          <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+        </ListGroup>
+        <Card.Body>
+          <Card.Link href="#">Card link</Card.Link>
+          <Card.Link href="#">Another link</Card.Link>
         </Card.Body>
       </Card>
     )

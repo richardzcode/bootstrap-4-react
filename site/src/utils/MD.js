@@ -7,7 +7,8 @@ import docComponents from '../docComponents';
 const renderToStaticMarkup = require('react-dom/server').renderToStaticMarkup;
 
 function encodeHtml(content) {
-  return content.replace(/</g, '&lt;')
+  return content.replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
 }
 
