@@ -1,5 +1,7 @@
 ## Button
 
+Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
+
 ```
 renderComp:button_1
 import React, { Component } from 'react';
@@ -17,6 +19,7 @@ export default class App extends Component {
         <Button info>Info</Button>
         <Button light>Light</Button>
         <Button dark>Dark</Button>
+        <Button link>Link</Button>
       </div>
     )
   }

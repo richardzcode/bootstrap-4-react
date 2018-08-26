@@ -13,6 +13,7 @@ export default class App extends Component {
         <Button info>Info</Button>
         <Button light>Light</Button>
         <Button dark>Dark</Button>
+        <Button link>Link</Button>
       </div>
     )
   }

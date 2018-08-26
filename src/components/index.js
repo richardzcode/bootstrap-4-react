@@ -5,7 +5,7 @@ export { default as ButtonGroup } from './ButtonGroup';
 export { default as ButtonToolbar } from './ButtonToolbar';
 export { default as Card } from './card';
 export { default as Carousel } from './carousel';
-export { default as Collapse } from './Collapse';
+export { default as Collapse } from './collapse';
 export { default as Dropdown } from './dropdown';
 export { default as Figure } from './figure';
 export { default as Form } from './form';

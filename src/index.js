@@ -5,6 +5,17 @@ const logger = new Logger('Bootstrap');
 
 export * from './components';
 
+function carousel(selector, options) {
+  selector = selector || '.carousel';
+  if ($) {
+    $(selector).carousel(options)
+  } else {
+    logger.warn('no jQuery available');
+  }
+
+  return this;
+}
+
 function popover(selector, options) {
   selector = selector || '[data-toggle="popover"]';
   if ($) {
@@ -28,6 +39,7 @@ function tooltip(selector, options) {
 }
 
 const Bootstrap = {
+  carousel,
   popover,
   tooltip
 }

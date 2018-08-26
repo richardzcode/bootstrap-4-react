@@ -1,5 +1,7 @@
 ## Badge
 
+Small count and labeling component.
+
 ```
 renderComp:badge_1
 import React, { Component } from 'react';
