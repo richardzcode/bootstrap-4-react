@@ -1,9 +1,3 @@
-## Figure
-
-Anytime you need to display a piece of content—like an image with an optional caption, consider using a `<Figure>`.
-
-```
-renderComp: figure
 import React, { Component } from 'react';
 import { Figure } from 'bootstrap-4-react';
 
@@ -24,4 +18,3 @@ export default class App extends Component {
     )
   }
 }
-```

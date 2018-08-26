@@ -7,11 +7,16 @@ import button_group from './button_group';
 import card from './card';
 import carousel from './carousel';
 import collapse from './collapse';
+import dropdown from './dropdown';
+import display from './display';
+import figure from './figure';
 
 const docComponents = {
   quick_start,
   alert,
-  blockquote
+  blockquote,
+  display,
+  figure
 };
 
 function copyProperties(from) {
@@ -24,5 +29,6 @@ copyProperties(button_group);
 copyProperties(card);
 copyProperties(carousel);
 copyProperties(collapse);
+copyProperties(dropdown);
 
 export default docComponents;

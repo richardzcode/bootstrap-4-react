@@ -1,6 +1,3 @@
-## Display
-
-```
 import React, { Component } from 'react';
 import { Display1, Display2, Display3, Display4 } from 'bootstrap-4-react';
 
@@ -16,4 +13,3 @@ export default class App extends Component {
     )
   }
 }
-```

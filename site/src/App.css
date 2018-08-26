@@ -71,11 +71,18 @@
   margin-top: 1rem;
 }
 
+.bd-example::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
 .bd-example button,
 .bd-example span,
 .bd-example label,
 .bd-example input,
-.bd-example a
+.bd-example a,
+.bd-example div
 {
   margin-left: .25rem;
   margin-right: .25rem;
