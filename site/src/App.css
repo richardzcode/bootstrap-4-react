@@ -81,8 +81,12 @@
 .bd-example span,
 .bd-example label,
 .bd-example input,
+.bd-example select,
+.bd-example textarea,
+.bd-example file,
 .bd-example a,
-.bd-example div
+.bd-example div,
+.bd-example .form-group .form-check label
 {
   margin-left: .25rem;
   margin-right: .25rem;
@@ -94,10 +98,25 @@
 .bd-example .btn-group-vertical label,
 .bd-example .input-group div,
 .bd-example .input-group span,
-.bd-example .input-group input
+.bd-example .input-group input,
+.bd-example .form-group div,
+.bd-example .form-group label,
+.bd-example .form-group input,
+.bd-example .form-group select,
+.bd-example .form-group textarea
 {
   margin-left: 0;
   margin-right: 0;
+}
+
+.bd-example .form-check input
+{
+  margin-left: -1.25rem;
+}
+
+.bd-example .form-check-inline input
+{
+  margin-left: 0;
 }
 
 .bd-callout {

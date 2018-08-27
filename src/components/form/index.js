@@ -9,7 +9,11 @@ import FormPlainText from './FormPlainText';
 import FormText from './FormText';
 import FormCheck from './FormCheck';
 import FormCheckInput from './FormCheckInput';
+import FormCheckLabel from './FormCheckLabel';
+import FormCheckbox from './FormCheckbox';
+import FormRadio from './FormRadio';
 import FormFeedback from './FormFeedback';
+import FormLabelCol from './FormLabelCol';
 
 Form.Group = FormGroup;
 Form.Input = FormInput;
@@ -21,6 +25,10 @@ Form.PlainText = FormPlainText;
 Form.Text = FormText;
 Form.Check = FormCheck;
 Form.CheckInput = FormCheckInput;
+Form.CheckLabel = FormCheckLabel;
+Form.Checkbox = FormCheckbox;
+Form.Radio = FormRadio;
 Form.Feedback = FormFeedback;
+Form.LabelCol = FormLabelCol;
 
 export default Form;

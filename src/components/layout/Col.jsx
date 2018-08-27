@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { JS } from 'fsts';
 
 import { mergeClassName, flatClassName, withClassName } from '../../utilities';
-import { BDiv } from '../dom';
+import { BDiv, BLabel } from '../dom';
 
 const breakpoints = [ 'xs', 'sm', 'md', 'lg', 'xl' ];
 
 class Col extends Component {
   render() {
-    const { xs, sm, md, lg, xl, offset } = this.props;
+    const { xs, sm, md, lg, xl, offset, as } = this.props;
     const cn = mergeClassName(
       this.props,
       [
@@ -20,9 +20,14 @@ class Col extends Component {
         flatClassName(offset, 'offset')
       ]
     );
-    const p = JS.lessProps(this.props, ['className', 'col', 'offset'].concat(breakpoints));
+    const p = JS.lessProps(
+      this.props,
+      ['className', 'col', 'offset', 'as'].concat(breakpoints)
+    );
 
-    return <BDiv {...p} className={cn}>{this.props.children}</BDiv>
+    return as === 'label'
+      ? <BLabel {...p} className={cn}>{this.props.children}</BLabel>
+      : <BDiv {...p} className={cn}>{this.props.children}</BDiv>
   }
 }
 

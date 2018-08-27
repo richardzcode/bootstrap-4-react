@@ -10,6 +10,7 @@ import collapse from './collapse';
 import dropdown from './dropdown';
 import display from './display';
 import figure from './figure';
+import form from './form';
 
 const docComponents = {
   quick_start,
@@ -30,5 +31,6 @@ copyProperties(card);
 copyProperties(carousel);
 copyProperties(collapse);
 copyProperties(dropdown);
+copyProperties(form);
 
 export default docComponents;

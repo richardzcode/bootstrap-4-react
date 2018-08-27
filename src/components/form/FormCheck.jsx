@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
 import { JS } from 'fsts';
 
-import { withClassName } from '../../utilities';
+import { mergeClassName, withClassName } from '../../utilities';
 import { BDiv } from '../dom';
 
 class FormCheck extends Component {
   render() {
-    const p = JS.lessProps(this.props, 'inline');
+    const { inline } = this.props;
+    const cn = mergeClassName(this.props, inline? 'form-check-inline' : '');
+    const p = JS.lessProps(this.props, ['className', 'inline']);
 
-    return <BDiv {...p}>{this.props.children}</BDiv>
+    return <BDiv {...p} className={cn}>{this.props.children}</BDiv>
   }
 }
 
-function formCheckClassName(props) {
-  const { inline } = props;
-  return inline? 'form-check-inline' : 'form-check';
-}
-
-export default withClassName(formCheckClassName)(FormCheck);
+export default withClassName('form-check')(FormCheck);
