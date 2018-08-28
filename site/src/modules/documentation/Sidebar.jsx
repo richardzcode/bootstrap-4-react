@@ -7,6 +7,7 @@ import {
 
 import {
   GettingStarted,
+  Layout,
   Components,
   Utilities
 } from './categories';
@@ -56,9 +57,10 @@ export default class Documentation extends Component {
           </Button>
         </Form>
         <Collapse mb="3" className="bd-links" id="bd-docs-nav">
-          <GettingStarted path={doc_path}/>
-          <Components path={doc_path}/>
-          <Utilities path={doc_path}/>
+          <GettingStarted path={doc_path} />
+          <Layout path={doc_path} />
+          <Components path={doc_path} />
+          <Utilities path={doc_path} />
         </Collapse>
       </React.Fragment>
     )

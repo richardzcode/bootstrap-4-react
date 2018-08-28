@@ -34,7 +34,9 @@ class Col extends Component {
 function colClassName(props) {
   const { col, xs, sm, md, lg, xl } = props;
   const hasSpecific = xs || sm || md || lg || xl;
-  return col? flatClassName(col, 'col') : (hasSpecific? '' : 'col');
+  return col
+    ? flatClassName(col, 'col').replace('col-col', 'col')
+    : (hasSpecific? '' : 'col');
 }
 
 export default withClassName(colClassName)(Col);

@@ -85,7 +85,7 @@
 .bd-example textarea,
 .bd-example file,
 .bd-example a,
-.bd-example div,
+.bd-example div>:not[class^=col],
 .bd-example .form-group .form-check label
 {
   margin-left: .25rem;
@@ -117,6 +117,16 @@
 .bd-example .form-check-inline input
 {
   margin-left: 0;
+}
+
+.bd-example>.container>.row>.col,
+.bd-example>.container>.row>[class^=offset],
+.bd-example>.container>.row>[class^=col],
+.bd-example>.container>.row>[class^=col]>.row>[class^=col] {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
 }
 
 .bd-callout {

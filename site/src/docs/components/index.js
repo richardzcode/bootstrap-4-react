@@ -10,7 +10,6 @@ import display from './display.md';
 import dropdown from './dropdown.md';
 import figure from './figure.md';
 import form from './form.md';
-import grid from './grid.md';
 import inputGroup from './input-group.md';
 import jumbotron from './jumbotron.md';
 import lead from './lead.md';
@@ -36,7 +35,6 @@ const components = {
   dropdown,
   figure,
   form,
-  grid,
   'input-group': inputGroup,
   jumbotron,
   lead,

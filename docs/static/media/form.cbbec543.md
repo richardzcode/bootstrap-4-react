@@ -1,5 +1,7 @@
 ## Form
 
+Bootstrap form controls expand on [Rebooted form styles](https://getbootstrap.com/docs/4.1/content/reboot/#forms). Use these components to opt into their customized displays for a more consistent rendering across browsers and devices.
+
 ```
 renderComp: form_1
 import React, { Component } from 'react';

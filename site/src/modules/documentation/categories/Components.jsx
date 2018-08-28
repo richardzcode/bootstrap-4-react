@@ -42,7 +42,6 @@ export default class Components extends Component {
             {this.renderItem('dropdown', 'Dropdown')}
             {this.renderItem('figure', 'Figure')}
             {this.renderItem('form', 'Form')}
-            {this.renderItem('grid', 'Grid')}
             {this.renderItem('input-group', 'InputGroup')}
             {this.renderItem('jumbotron', 'Jumbotron')}
             {this.renderItem('lead', 'Lead')}

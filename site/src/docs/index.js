@@ -1,5 +1,6 @@
 import README from './README.md';
 import gettingStarted from './getting-started';
+import layout from './layout';
 import components from './components';
 import utilities from './utilities';
 
@@ -14,6 +15,7 @@ function fillRepo(category, category_key) {
 }
 
 fillRepo(gettingStarted, 'getting-started');
+fillRepo(layout, 'layout');
 fillRepo(components, 'components');
 fillRepo(utilities, 'utilities');
 
