@@ -30,4 +30,4 @@ export default class App extends Component {
 
 ## Documentation
 
-[Documentation](https://richardzcode.github.io/bootstrap-4-react) is built by `bootstrap-4-react` itself, check [source code](https://github.com/richardzcode/bootstrap-4-react/tree/master/site)
+[Documentation](https://bootstrap-4-react.com) is built by `bootstrap-4-react` itself, check [source code](https://github.com/richardzcode/bootstrap-4-react/tree/master/site)
