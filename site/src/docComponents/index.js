@@ -12,6 +12,7 @@ import display from './display';
 import figure from './figure';
 import form from './form';
 import grid from './grid';
+import input_group from './input_group';
 
 const docComponents = {
   quick_start,
@@ -34,5 +35,6 @@ copyProperties(collapse);
 copyProperties(dropdown);
 copyProperties(form);
 copyProperties(grid);
+copyProperties(input_group);
 
 export default docComponents;

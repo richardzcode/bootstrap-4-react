@@ -15,6 +15,12 @@ import FormRadio from './FormRadio';
 import FormFeedback from './FormFeedback';
 import FormLabelCol from './FormLabelCol';
 
+import FormCustomCheckbox from './FormCustomCheckbox';
+import FormCustomRadio from './FormCustomRadio';
+import FormCustomSelect from './FormCustomSelect';
+import FormCustomRange from './FormCustomRange';
+import FormCustomFile from './FormCustomFile';
+
 Form.Group = FormGroup;
 Form.Input = FormInput;
 Form.Select = FormSelect;
@@ -30,5 +36,11 @@ Form.Checkbox = FormCheckbox;
 Form.Radio = FormRadio;
 Form.Feedback = FormFeedback;
 Form.LabelCol = FormLabelCol;
+
+Form.CustomCheckbox = FormCustomCheckbox;
+Form.CustomRadio = FormCustomRadio;
+Form.CustomSelect = FormCustomSelect;
+Form.CustomRange = FormCustomRange;
+Form.CustomFile = FormCustomFile;
 
 export default Form;

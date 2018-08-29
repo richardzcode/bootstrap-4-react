@@ -259,3 +259,134 @@ export default class App extends Component {
   }
 }
 ```
+
+### Custom forms
+
+For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They’re built on top of semantic and accessible markup, so they’re solid replacements for any default form control.
+
+#### Checkbox
+
+```
+renderComp: form_8
+import React, { Component } from 'react';
+import { Form } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Form.CustomCheckbox id="customCheck1">
+          Check this custom checkbox
+        </Form.CustomCheckbox>
+        <Form.CustomCheckbox id="customCheck2" disabled>
+          Check this custom checkbox
+        </Form.CustomCheckbox>
+      </div>
+    )
+  }
+}
+```
+
+#### Radio
+
+```
+renderComp: form_9
+import React, { Component } from 'react';
+import { Form } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Form.CustomRadio id="customRadio1" name="customRadio">
+          Toggle this custom radio
+        </Form.CustomRadio>
+        <Form.CustomRadio id="customRadio2" name="customRadio">
+          Or toggle this other custom radio
+        </Form.CustomRadio>
+        <Form.CustomRadio id="customRadio3" name="customRadio" mb="3" disabled>
+          Toggle this custom radio
+        </Form.CustomRadio>
+        <Form.CustomRadio id="customRadioInline1" name="customRadioInline" inline>
+          Inline custom radio
+        </Form.CustomRadio>
+        <Form.CustomRadio id="customRadioInline2" name="customRadioInline" inline>
+          Other inline custom radio
+        </Form.CustomRadio>
+      </div>
+    )
+  }
+}
+```
+
+#### Select menu
+
+```
+renderComp: form_10
+import React, { Component } from 'react';
+import { Form } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Form.CustomSelect lg mb="3">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </Form.CustomSelect>
+        <Form.CustomSelect mb="3">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </Form.CustomSelect>
+        <Form.CustomSelect sm mb="3">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </Form.CustomSelect>
+      </div>
+    )
+  }
+}
+```
+
+#### Range
+
+```
+renderComp: form_11
+import React, { Component } from 'react';
+import { Form } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <label htmlFor="customRange1">Example range</label>
+        <Form.CustomRange id="customRange1" />
+      </div>
+    )
+  }
+}
+```
+
+#### File browser
+
+```
+renderComp: form_12
+import React, { Component } from 'react';
+import { Form } from 'bootstrap-4-react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <Form.CustomFile id="customFile1">
+        Choose file
+      </Form.CustomFile>
+    )
+  }
+}
+```
