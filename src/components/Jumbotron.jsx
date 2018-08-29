@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import { JS } from 'fsts';
 
-import { withClassName } from '../utilities';
+import { mergeClassName, withClassName } from '../utilities';
 import { BDiv } from './dom';
 
 class Jumbotron extends Component {
   render() {
-    return <BDiv {...this.props}>{this.props.children}</BDiv>
+    const { fluid } = this.props;
+    const cn = mergeClassName(this.props, fluid? 'jumbotron-fluid' : '');
+    const p = JS.lessProps(this.props, ['className', 'fluid']);
+
+    return <BDiv {...p} className={cn}>{this.props.children}</BDiv>
   }
 }
 

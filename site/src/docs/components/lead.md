@@ -1,6 +1,9 @@
 ## Lead
 
+Make a paragraph stand out.
+
 ```
+renderComp: lead
 import React, { Component } from 'react';
 import { Lead } from 'bootstrap-4-react';
 

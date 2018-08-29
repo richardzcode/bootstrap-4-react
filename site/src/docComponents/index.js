@@ -13,13 +13,17 @@ import figure from './figure';
 import form from './form';
 import grid from './grid';
 import input_group from './input_group';
+import jumbotron from './jumbotron';
+import lead from './lead';
+import list from './list';
 
 const docComponents = {
   quick_start,
   alert,
   blockquote,
   display,
-  figure
+  figure,
+  lead
 };
 
 function copyProperties(from) {
@@ -36,5 +40,7 @@ copyProperties(dropdown);
 copyProperties(form);
 copyProperties(grid);
 copyProperties(input_group);
+copyProperties(jumbotron);
+copyProperties(list);
 
 export default docComponents;
