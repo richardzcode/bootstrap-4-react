@@ -6,9 +6,16 @@ import { BDiv } from '../dom';
 
 class ModalDialog extends Component {
   render() {
-    const { centered } = this.props;
-    const cn = mergeClassName(this.props, centered? 'modal-dialog-centered' : '');
-    const p = JS.lessProps(this.props, ['className', 'centered', 'role']);
+    const { centered, lg, sm } = this.props;
+    const cn = mergeClassName(
+      this.props,
+      [
+        centered? 'modal-dialog-centered' : '',
+        lg? 'modal-lg' : '',
+        sm? 'modal-sm': ''
+      ]
+    );
+    const p = JS.lessProps(this.props, ['className', 'centered', 'lg', 'sm', 'role']);
 
     return <BDiv {...p} className={cn} role="document">{this.props.children}</BDiv>
   }

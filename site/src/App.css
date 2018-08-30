@@ -119,6 +119,8 @@
   margin-left: 0;
 }
 
+.modal-body>.container-fluid>.row>[class^=col],
+.modal-body>.container-fluid>.row>[class^=col]>.row>[class^=col],
 .bd-example>.container>.row>.col,
 .bd-example>.container>.row>[class^=offset],
 .bd-example>.container>.row>[class^=col],
@@ -143,7 +145,7 @@
     position: -webkit-sticky!important;
     position: sticky!important;
     top: 0;
-    z-index: 1071;
+    z-index: 1001;
   }
 
   .bd-sidebar {

@@ -18,6 +18,7 @@ import lead from './lead';
 import list from './list';
 import list_group from './list_group';
 import media from './media';
+import modal from './modal';
 
 const docComponents = {
   quick_start,
@@ -46,5 +47,6 @@ copyProperties(jumbotron);
 copyProperties(list);
 copyProperties(list_group);
 copyProperties(media);
+copyProperties(modal);
 
 export default docComponents;
