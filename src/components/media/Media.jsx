@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
+import { JS } from 'fsts';
 
 import { withClassName } from '../../utilities';
-import { BDiv } from '../dom';
+import { BDiv, BLi } from '../dom';
 
 class Media extends Component {
   render() {
-    return <BDiv {...this.props}>{this.props.children}</BDiv>
+    const { as } = this.props;
+    const p = JS.lessProps(this.props, 'as');
+
+    return as === 'li'
+      ? <BLi {...p}>{this.props.children}</BLi>
+      : <BDiv {...p}>{this.props.children}</BDiv>
   }
 }
 

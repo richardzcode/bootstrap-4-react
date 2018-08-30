@@ -16,6 +16,8 @@ import input_group from './input_group';
 import jumbotron from './jumbotron';
 import lead from './lead';
 import list from './list';
+import list_group from './list_group';
+import media from './media';
 
 const docComponents = {
   quick_start,
@@ -42,5 +44,7 @@ copyProperties(grid);
 copyProperties(input_group);
 copyProperties(jumbotron);
 copyProperties(list);
+copyProperties(list_group);
+copyProperties(media);
 
 export default docComponents;
