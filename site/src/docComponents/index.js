@@ -19,6 +19,7 @@ import list from './list';
 import list_group from './list_group';
 import media from './media';
 import modal from './modal';
+import nav from './nav';
 
 const docComponents = {
   quick_start,
@@ -48,5 +49,6 @@ copyProperties(list);
 copyProperties(list_group);
 copyProperties(media);
 copyProperties(modal);
+copyProperties(nav);
 
 export default docComponents;
