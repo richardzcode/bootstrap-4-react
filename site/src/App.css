@@ -71,6 +71,16 @@
   margin-top: 1rem;
 }
 
+.bd-example {
+  position: relative;
+}
+
+.bd-example .fixed-top,
+.bd-example .fixed-bottom,
+.bd-example .sticky-top {
+  position: absolute;
+}
+
 .bd-example::after {
   display: block;
   clear: both;

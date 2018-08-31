@@ -20,6 +20,7 @@ import list_group from './list_group';
 import media from './media';
 import modal from './modal';
 import nav from './nav';
+import navbar from './navbar';
 
 const docComponents = {
   quick_start,
@@ -50,5 +51,6 @@ copyProperties(list_group);
 copyProperties(media);
 copyProperties(modal);
 copyProperties(nav);
+copyProperties(navbar);
 
 export default docComponents;

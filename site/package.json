@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap-4-react": "file:../bootstrap-4-react-0.0.41.tgz",
+    "bootstrap-4-react": "file:../bootstrap-4-react-0.0.42.tgz",
     "history": "^4.7.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
