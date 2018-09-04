@@ -1,3 +1,4 @@
+import introduction from './introduction';
 import quick_start from './quick_start';
 import alert from './alert';
 import badge from './badge';
@@ -25,6 +26,7 @@ import popover from './popover';
 import tooltip from './tooltip';
 
 const docComponents = {
+  introduction,
   quick_start,
   alert,
   blockquote,
