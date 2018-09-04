@@ -63,4 +63,5 @@ typings/
 ## Customize
 **/node_modules/
 **/build/
+**/config.js
 .DS_Store

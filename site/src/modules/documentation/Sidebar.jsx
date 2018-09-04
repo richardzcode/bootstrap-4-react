@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import {
-  Form,
   Button,
-  Collapse
+  Collapse,
+  BDiv
 } from 'bootstrap-4-react';
 
+import SearchBox from './SearchBox';
 import {
   GettingStarted,
   Layout,
@@ -12,7 +13,7 @@ import {
   Utilities
 } from './categories';
 
-export default class Documentation extends Component {
+export default class Sidebar extends Component {
   render() {
     const { path } = this.props;
     const doc_path = path && path.length > 1
@@ -21,13 +22,8 @@ export default class Documentation extends Component {
 
     return (
       <React.Fragment>
-        <Form display="flex" alignItems="center" className="bd-search">
-          <Form.Input
-            id="search-input"
-            placeholder="Search..."
-            aria-label="Search for..."
-            autoComplete="off"
-          />
+        <BDiv display="flex" alignItems="start" className="bd-search">
+          <SearchBox />
           <Button
             display="md-none"
             p="0"
@@ -55,7 +51,7 @@ export default class Documentation extends Component {
               />
             </svg>
           </Button>
-        </Form>
+        </BDiv>
         <Collapse mb="3" className="bd-links" id="bd-docs-nav">
           <GettingStarted path={doc_path} />
           <Layout path={doc_path} />

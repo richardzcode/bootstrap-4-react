@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "algoliasearch": "^3.30.0",
     "bootstrap-4-react": "file:../bootstrap-4-react-0.0.42.tgz",
+    "fs-extra": "^7.0.0",
+    "glob": "^7.1.3",
     "history": "^4.7.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
@@ -14,6 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "indexing": "node src/search/indexing.js"
   }
 }
