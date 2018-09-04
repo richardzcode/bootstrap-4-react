@@ -47,7 +47,6 @@ export default class Components extends Component {
             {this.renderItem('lead', 'Lead')}
             {this.renderItem('list', 'List')}
             {this.renderItem('list-group', 'ListGroup')}
-            {this.renderItem('media', 'Media')}
             {this.renderItem('modal', 'Modal')}
             {this.renderItem('nav', 'Nav')}
             {this.renderItem('navbar', 'Navbar')}

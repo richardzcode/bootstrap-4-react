@@ -21,6 +21,7 @@ import media from './media';
 import modal from './modal';
 import nav from './nav';
 import navbar from './navbar';
+import popover from './popover';
 
 const docComponents = {
   quick_start,
@@ -52,5 +53,6 @@ copyProperties(media);
 copyProperties(modal);
 copyProperties(nav);
 copyProperties(navbar);
+copyProperties(popover);
 
 export default docComponents;

@@ -15,7 +15,6 @@ import jumbotron from './jumbotron.md';
 import lead from './lead.md';
 import list from './list.md';
 import listGroup from './list-group.md';
-import media from './media.md';
 import modal from './modal.md';
 import nav from './nav.md';
 import navbar from './navbar.md';
@@ -40,7 +39,6 @@ const components = {
   lead,
   list,
   'list-group': listGroup,
-  media,
   modal,
   nav,
   navbar,

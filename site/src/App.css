@@ -95,8 +95,13 @@
 .bd-example textarea,
 .bd-example file,
 .bd-example a,
-.bd-example div>:not[class^=col],
 .bd-example .form-group .form-check label
+{
+  margin-left: .25rem;
+  margin-right: .25rem;
+}
+
+.bd-example div>:not[class^=col]
 {
   margin-left: .25rem;
   margin-right: .25rem;
