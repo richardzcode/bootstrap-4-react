@@ -26,7 +26,9 @@ import navbar from './navbar';
 import popover from './popover';
 import tooltip from './tooltip';
 
+import border from './border';
 import flex from './flex';
+import float from './float';
 
 const docComponents = {
   introduction,
@@ -62,6 +64,8 @@ copyProperties(navbar);
 copyProperties(popover);
 copyProperties(tooltip);
 
+copyProperties(border);
 copyProperties(flex);
+copyProperties(float);
 
 export default docComponents;

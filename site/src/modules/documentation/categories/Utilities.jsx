@@ -30,6 +30,7 @@ export default class Utilities extends Component {
         </BDiv>
         { isActive &&
           <Nav display="block">
+            {this.renderItem('border', 'Border')}
             {this.renderItem('flex', 'Flex')}
             {this.renderItem('float', 'Float')}
           </Nav>
