@@ -1,5 +1,6 @@
 import introduction from './introduction';
 import quick_start from './quick_start';
+
 import alert from './alert';
 import badge from './badge';
 import blockquote from './blockquote';
@@ -24,6 +25,8 @@ import nav from './nav';
 import navbar from './navbar';
 import popover from './popover';
 import tooltip from './tooltip';
+
+import flex from './flex';
 
 const docComponents = {
   introduction,
@@ -58,5 +61,7 @@ copyProperties(nav);
 copyProperties(navbar);
 copyProperties(popover);
 copyProperties(tooltip);
+
+copyProperties(flex);
 
 export default docComponents;
