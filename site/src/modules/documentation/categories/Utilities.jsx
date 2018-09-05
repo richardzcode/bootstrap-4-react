@@ -31,8 +31,10 @@ export default class Utilities extends Component {
         { isActive &&
           <Nav display="block">
             {this.renderItem('border', 'Border')}
+            {this.renderItem('colors', 'Colors')}
             {this.renderItem('flex', 'Flex')}
             {this.renderItem('float', 'Float')}
+            {this.renderItem('spacing', 'Spacing')}
           </Nav>
         }
       </React.Fragment>

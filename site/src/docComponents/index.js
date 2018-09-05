@@ -27,8 +27,10 @@ import popover from './popover';
 import tooltip from './tooltip';
 
 import border from './border';
+import colors from './colors';
 import flex from './flex';
 import float from './float';
+import spacing from './spacing';
 
 const docComponents = {
   introduction,
@@ -37,7 +39,9 @@ const docComponents = {
   blockquote,
   display,
   figure,
-  lead
+  lead,
+
+  spacing
 };
 
 function copyProperties(from) {
@@ -65,6 +69,7 @@ copyProperties(popover);
 copyProperties(tooltip);
 
 copyProperties(border);
+copyProperties(colors);
 copyProperties(flex);
 copyProperties(float);
 
