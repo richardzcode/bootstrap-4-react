@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.d3ab8e68.css",
   "main.css.map": "static/css/main.d3ab8e68.css.map",
-  "main.js": "static/js/main.869dfa65.js",
-  "main.js.map": "static/js/main.869dfa65.js.map",
+  "main.js": "static/js/main.07ba6467.js",
+  "main.js.map": "static/js/main.07ba6467.js.map",
   "static/media/README.md": "static/media/README.9591bdf5.md",
   "static/media/alert.md": "static/media/alert.9f85a600.md",
   "static/media/badge.md": "static/media/badge.52a68566.md",
@@ -33,6 +33,8 @@
   "static/media/navbar.md": "static/media/navbar.adc73b60.md",
   "static/media/popover.md": "static/media/popover.5c02f790.md",
   "static/media/quick-start.md": "static/media/quick-start.ab97e54b.md",
+  "static/media/shadow.md": "static/media/shadow.fff7ccea.md",
   "static/media/spacing.md": "static/media/spacing.2f5e5530.md",
-  "static/media/tooltip.md": "static/media/tooltip.cce9ba46.md"
+  "static/media/tooltip.md": "static/media/tooltip.cce9ba46.md",
+  "static/media/vertical-align.md": "static/media/vertical-align.e10f8087.md"
 }

@@ -34,7 +34,9 @@ export default class Utilities extends Component {
             {this.renderItem('colors', 'Colors')}
             {this.renderItem('flex', 'Flex')}
             {this.renderItem('float', 'Float')}
+            {this.renderItem('shadow', 'Shadow')}
             {this.renderItem('spacing', 'Spacing')}
+            {this.renderItem('vertical-align', 'Vertical align')}
           </Nav>
         }
       </React.Fragment>

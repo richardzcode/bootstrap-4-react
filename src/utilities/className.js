@@ -8,10 +8,11 @@ export function mergeClassName(props, className) {
     .join(' ');
 }
 
-export function flatClassName(name, prefix) {
-  if (name === true) { return prefix; }
-  if (!name || !name.trim()) { return ''; }
-  return [].concat(name).join(' ').split(' ')
+export function flatClassName(value, prefix) {
+  if (value === true) { return prefix; }
+  if (value === false) { return prefix + '-none'; }
+  if (!value || !value.trim()) { return ''; }
+  return [].concat(value).join(' ').split(' ')
     .map(item => prefix? prefix + '-' + item : item)
     .join(' ');
 }

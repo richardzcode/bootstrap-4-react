@@ -8,7 +8,7 @@ export function withFloat() {
     return class extends Component {
       render() {
         const { float } = this.props;
-        const cn = mergeClassName(this.props, float? flatClassName(float, 'float') : '');
+        const cn = mergeClassName(this.props, flatClassName(float, 'float'));
         const p = JS.lessProps(this.props, ['className', 'float']);
 
         return cn

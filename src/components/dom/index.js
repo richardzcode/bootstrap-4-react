@@ -25,7 +25,7 @@ export { default as BBlockquote } from './Blockquote';
 export { default as BHeader } from './Header';
 export { default as BFooter } from './Footer';
 export { default as BNav } from './Nav';
-export { default as BTable } from './Table';
+export * from './Table';
 export { default as BHr } from './Hr';
 
 export { default as Checkbox } from './Checkbox';

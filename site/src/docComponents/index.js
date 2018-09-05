@@ -30,7 +30,9 @@ import border from './border';
 import colors from './colors';
 import flex from './flex';
 import float from './float';
+import shadow from './shadow';
 import spacing from './spacing';
+import vertical_align from './vertical_align';
 
 const docComponents = {
   introduction,
@@ -41,6 +43,7 @@ const docComponents = {
   figure,
   lead,
 
+  shadow,
   spacing
 };
 
@@ -72,5 +75,6 @@ copyProperties(border);
 copyProperties(colors);
 copyProperties(flex);
 copyProperties(float);
+copyProperties(vertical_align);
 
 export default docComponents;
