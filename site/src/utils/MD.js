@@ -49,7 +49,7 @@ function renderComp(lines) {
     if (!Comp) { return ''; }
 
     return renderToStaticMarkup(
-      <BDiv border="light" p="3" className="bd-example">
+      <BDiv border="light" p="3" mt="1" className="bd-example">
         <Comp />
       </BDiv>
     )
@@ -65,10 +65,26 @@ function blockquote(md) {
   }
 }
 
+function table(md) {
+  md.renderer.rules.th_open = function(tokens, idx, options, env) {
+    return '<th class="border p-2">'
+  };
+  md.renderer.rules.th_close = function(tokens, idx, options, env) {
+    return '</th>';
+  }
+  md.renderer.rules.td_open = function(tokens, idx, options, env) {
+    return '<td class="border p-2">'
+  };
+  md.renderer.rules.td_close = function(tokens, idx, options, env) {
+    return '</td>';
+  }
+}
+
 const md = new Remarkable('full', { html: true });
 md.use(heading);
 md.use(fence);
 md.use(blockquote);
+md.use(table);
 
 export default class MD {
   render(content) {

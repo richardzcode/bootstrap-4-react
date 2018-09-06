@@ -28,6 +28,7 @@ import tooltip from './tooltip';
 
 import border from './border';
 import colors from './colors';
+import display_util from './display_util';
 import flex from './flex';
 import float from './float';
 import shadow from './shadow';
@@ -73,6 +74,7 @@ copyProperties(tooltip);
 
 copyProperties(border);
 copyProperties(colors);
+copyProperties(display_util);
 copyProperties(flex);
 copyProperties(float);
 copyProperties(vertical_align);

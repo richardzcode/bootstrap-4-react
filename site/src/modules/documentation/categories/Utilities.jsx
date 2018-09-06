@@ -8,7 +8,7 @@ import {
 export default class Utilities extends Component {
   renderItem(name, label) {
     const path = this.props.path || '';
-    const subPath = path.replace(/^utilities\/?/, '') || 'flex';
+    const subPath = path.replace(/^utilities\/?/, '') || 'border';
     const subMatch = new RegExp(name + '\\/?$');
     const isActive = subPath.match(subMatch);
 
@@ -32,6 +32,7 @@ export default class Utilities extends Component {
           <Nav display="block">
             {this.renderItem('border', 'Border')}
             {this.renderItem('colors', 'Colors')}
+            {this.renderItem('display', 'Display')}
             {this.renderItem('flex', 'Flex')}
             {this.renderItem('float', 'Float')}
             {this.renderItem('shadow', 'Shadow')}
