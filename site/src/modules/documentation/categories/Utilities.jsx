@@ -36,6 +36,7 @@ export default class Utilities extends Component {
             {this.renderItem('flex', 'Flex')}
             {this.renderItem('float', 'Float')}
             {this.renderItem('shadow', 'Shadow')}
+            {this.renderItem('sizing', 'Sizing')}
             {this.renderItem('spacing', 'Spacing')}
             {this.renderItem('vertical-align', 'Vertical align')}
           </Nav>

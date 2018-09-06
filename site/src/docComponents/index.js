@@ -32,6 +32,7 @@ import display_util from './display_util';
 import flex from './flex';
 import float from './float';
 import shadow from './shadow';
+import sizing from './sizing';
 import spacing from './spacing';
 import vertical_align from './vertical_align';
 
@@ -77,6 +78,7 @@ copyProperties(colors);
 copyProperties(display_util);
 copyProperties(flex);
 copyProperties(float);
+copyProperties(sizing);
 copyProperties(vertical_align);
 
 export default docComponents;
