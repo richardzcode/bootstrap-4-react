@@ -1,5 +1,6 @@
 export { default as Alert } from './Alert';
 export { default as Badge } from './Badge';
+export { default as Breadcrumb } from './breadcrumb';
 export { default as Button } from './Button';
 export { default as ButtonGroup } from './ButtonGroup';
 export { default as ButtonToolbar } from './ButtonToolbar';
@@ -20,6 +21,7 @@ export { default as Media } from './media';
 export { default as Modal } from './modal';
 export { default as Nav } from './nav';
 export { default as Navbar } from './navbar';
+export { default as Pagination } from './pagination';
 export { default as Progress } from './progress';
 export { default as Tab } from './tab';
 export { default as Table } from './table';

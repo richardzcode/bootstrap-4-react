@@ -118,7 +118,9 @@
 .bd-example .form-group label,
 .bd-example .form-group input,
 .bd-example .form-group select,
-.bd-example .form-group textarea
+.bd-example .form-group textarea,
+.bd-example .pagination a,
+.bd-example .pagination span
 {
   margin-left: 0;
   margin-right: 0;

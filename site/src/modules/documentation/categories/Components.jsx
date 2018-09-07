@@ -33,6 +33,7 @@ export default class Components extends Component {
             {this.renderItem('alert', 'Alert')}
             {this.renderItem('badge', 'Badge')}
             {this.renderItem('blockquote', 'Blockquote')}
+            {this.renderItem('breadcrumb', 'Breadcrumb')}
             {this.renderItem('button', 'Button')}
             {this.renderItem('button-group', 'ButtonGroup')}
             {this.renderItem('card', 'Card')}
@@ -50,6 +51,7 @@ export default class Components extends Component {
             {this.renderItem('modal', 'Modal')}
             {this.renderItem('nav', 'Nav')}
             {this.renderItem('navbar', 'Navbar')}
+            {this.renderItem('pagination', 'Pagination')}
             {this.renderItem('progress', 'Progress')}
             {this.renderItem('popover', 'Popover')}
             {this.renderItem('tooltip', 'Tooltip')}

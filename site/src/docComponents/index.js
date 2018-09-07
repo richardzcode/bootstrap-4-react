@@ -4,6 +4,7 @@ import quick_start from './quick_start';
 import alert from './alert';
 import badge from './badge';
 import blockquote from './blockquote';
+import breadcrumb from './breadcrumb';
 import button from './button';
 import button_group from './button_group';
 import card from './card';
@@ -23,6 +24,7 @@ import media from './media';
 import modal from './modal';
 import nav from './nav';
 import navbar from './navbar';
+import pagination from './pagination';
 import popover from './popover';
 import progress from './progress';
 import tooltip from './tooltip';
@@ -42,6 +44,7 @@ const docComponents = {
   quick_start,
   alert,
   blockquote,
+  breadcrumb,
   display,
   figure,
   lead,
@@ -71,6 +74,7 @@ copyProperties(media);
 copyProperties(modal);
 copyProperties(nav);
 copyProperties(navbar);
+copyProperties(pagination);
 copyProperties(popover);
 copyProperties(progress);
 copyProperties(tooltip);

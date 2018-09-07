@@ -17,6 +17,7 @@ class ProgressBar extends Component {
     const p = JS.lessProps(
       this.props,
       [
+        'className',
         'role',
         'striped',
         'animated',
