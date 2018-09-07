@@ -50,6 +50,7 @@ export default class Components extends Component {
             {this.renderItem('modal', 'Modal')}
             {this.renderItem('nav', 'Nav')}
             {this.renderItem('navbar', 'Navbar')}
+            {this.renderItem('progress', 'Progress')}
             {this.renderItem('popover', 'Popover')}
             {this.renderItem('tooltip', 'Tooltip')}
           </Nav>

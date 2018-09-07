@@ -24,6 +24,7 @@ import modal from './modal';
 import nav from './nav';
 import navbar from './navbar';
 import popover from './popover';
+import progress from './progress';
 import tooltip from './tooltip';
 
 import border from './border';
@@ -71,6 +72,7 @@ copyProperties(modal);
 copyProperties(nav);
 copyProperties(navbar);
 copyProperties(popover);
+copyProperties(progress);
 copyProperties(tooltip);
 
 copyProperties(border);

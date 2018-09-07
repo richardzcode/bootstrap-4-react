@@ -31,6 +31,6 @@
   },
   "dependencies": {
     "bootstrap-4-required": "0.0.1",
-    "fsts": "0.0.43"
+    "fsts": "0.0.44"
   }
 }

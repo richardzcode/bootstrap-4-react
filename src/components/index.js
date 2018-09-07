@@ -20,6 +20,7 @@ export { default as Media } from './media';
 export { default as Modal } from './modal';
 export { default as Nav } from './nav';
 export { default as Navbar } from './navbar';
+export { default as Progress } from './progress';
 export { default as Tab } from './tab';
 export { default as Table } from './table';
 

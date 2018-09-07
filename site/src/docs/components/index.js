@@ -18,6 +18,7 @@ import listGroup from './list-group.md';
 import modal from './modal.md';
 import nav from './nav.md';
 import navbar from './navbar.md';
+import progress from './progress.md';
 import popover from './popover.md';
 import tooltip from './tooltip.md';
 
@@ -42,6 +43,7 @@ const components = {
   modal,
   nav,
   navbar,
+  progress,
   popover,
   tooltip
 }

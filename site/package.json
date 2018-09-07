@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "algoliasearch": "^3.30.0",
-    "bootstrap-4-react": "file:../bootstrap-4-react-0.0.43.tgz",
+    "bootstrap-4-react": "file:../bootstrap-4-react-0.0.44.tgz",
     "fs-extra": "^7.0.0",
     "glob": "^7.1.3",
     "history": "^4.7.2",
