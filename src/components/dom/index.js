@@ -27,6 +27,7 @@ export { default as BFooter } from './Footer';
 export { default as BNav } from './Nav';
 export * from './Table';
 export { default as BHr } from './Hr';
+export { default as BSvg } from './Svg';
 
 export { default as Checkbox } from './Checkbox';
 export { default as Radio } from './Radio';
