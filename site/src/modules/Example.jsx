@@ -5,14 +5,16 @@ import {
   Lead,
   Button,
   Card,
-  BH4
+  BH4,
+  BImg
 } from 'bootstrap-4-react';
 
 const ExampleCard = (props) => {
-  const { title, description, bootstrapPath, b4rPath } = props;
+  const { title, description, thumbnailPath, bootstrapPath, b4rPath } = props;
   return (
     <Card>
       <Card.Body>
+        <BImg thumbnail mb="3" src={"https://getbootstrap.com/docs/4.1/examples/screenshots/" + thumbnailPath} />
         <Card.Title>{title}</Card.Title>
         <Card.Text>
           {description}
@@ -52,20 +54,30 @@ export default class Example extends Component {
           <ExampleCard
             title="Album"
             description="Simple one-page template for photo galleries, portfolios, and more."
+            thumbnailPath="album.png"
             bootstrapPath="album"
             b4rPath="Album.js"
           />
           <ExampleCard
             title="Pricing"
             description="Example pricing page built with Cards and featuring a custom header and footer."
+            thumbnailPath="pricing.png"
             bootstrapPath="pricing"
             b4rPath="Pricing.js"
           />
           <ExampleCard
             title="Checkout"
             description="Custom checkout form showing our form components and their validation features."
+            thumbnailPath="checkout.png"
             bootstrapPath="checkout"
             b4rPath="Checkout.js"
+          />
+          <ExampleCard
+            title="Product"
+            description="Lean product-focused marketing page with extensive grid and image work."
+            thumbnailPath="product.png"
+            bootstrapPath="product"
+            b4rPath="Product.js"
           />
         </Card.Deck>
       </React.Fragment>
