@@ -12,20 +12,22 @@ import {
 const ExampleCard = (props) => {
   const { title, description, thumbnailPath, bootstrapPath, b4rPath } = props;
   return (
-    <Card>
+    <Card my="2" style={{ minWidth: '15rem' }}>
       <Card.Body>
         <BImg thumbnail mb="3" src={"https://getbootstrap.com/docs/4.1/examples/screenshots/" + thumbnailPath} />
         <Card.Title>{title}</Card.Title>
         <Card.Text>
           {description}
         </Card.Text>
+      </Card.Body>
+      <Card.Footer>
         <Card.Link href={"https://getbootstrap.com/docs/4.1/examples/" + bootstrapPath + "/"}>
           Bootstrap
         </Card.Link>
         <Card.Link href={"https://github.com/richardzcode/bootstrap-4-react/blob/master/example/" + b4rPath}>
           React
         </Card.Link>
-      </Card.Body>
+      </Card.Footer>
     </Card>
   )
 }
