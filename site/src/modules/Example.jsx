@@ -79,6 +79,13 @@ export default class Example extends Component {
             bootstrapPath="product"
             b4rPath="Product.js"
           />
+          <ExampleCard
+            title="Cover"
+            description="A one-page template for building simple and beautiful home pages."
+            thumbnailPath="cover.png"
+            bootstrapPath="cover"
+            b4rPath="Cover.js"
+          />
         </Card.Deck>
       </React.Fragment>
     )
