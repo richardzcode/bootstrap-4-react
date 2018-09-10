@@ -7,7 +7,7 @@
 
 Bootstrap 4 React components.
 
-The goal of this library is to simplify common usages of Bootstrap 4 in React. Developers can always fall back to Bootstrap original syntaxes for advanced cases.
+This library helps render Bootstrap 4 markups in React. Developers can always fall back to Bootstrap original syntaxes for advanced cases.
 
 ## Get started
 
