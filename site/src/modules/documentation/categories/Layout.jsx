@@ -31,6 +31,7 @@ export default class GettingStarted extends Component {
         { isActive &&
           <Nav display="block">
             {this.renderItem('grid', 'Grid')}
+            {this.renderItem('html-elements', 'HTML elements')}
             {this.renderItem('media', 'Media')}
           </Nav>
         }
