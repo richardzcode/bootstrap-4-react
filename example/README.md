@@ -41,3 +41,11 @@ Rebuild [Bootstrap examples](https://getbootstrap.com/docs/4.1/examples/)
 [Bootstrap](https://getbootstrap.com/docs/4.1/examples/cover/)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [React](https://github.com/richardzcode/bootstrap-4-react/blob/master/example/Cover.js)
+
+### Carousel
+
+<img src="https://getbootstrap.com/docs/4.1/examples/screenshots/carousel.png" width="320" />
+
+[Bootstrap](https://getbootstrap.com/docs/4.1/examples/carousel/)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[React](https://github.com/richardzcode/bootstrap-4-react/blob/master/example/Carousel.js)

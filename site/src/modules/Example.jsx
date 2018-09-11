@@ -88,6 +88,13 @@ export default class Example extends Component {
             bootstrapPath="cover"
             b4rPath="Cover.js"
           />
+          <ExampleCard
+            title="Carousel"
+            description="Customize the navbar and carousel, then add some new components."
+            thumbnailPath="carousel.png"
+            bootstrapPath="carousel"
+            b4rPath="Carousel.js"
+          />
         </Card.Deck>
       </React.Fragment>
     )
