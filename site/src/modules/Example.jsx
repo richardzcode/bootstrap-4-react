@@ -12,7 +12,7 @@ import {
 const ExampleCard = (props) => {
   const { title, description, thumbnailPath, bootstrapPath, b4rPath } = props;
   return (
-    <Card my="2" style={{ minWidth: '15rem' }}>
+    <Card my="2" style={{ minWidth: '15rem', maxWidth: '45rem' }}>
       <Card.Body>
         <BImg thumbnail mb="3" src={"https://getbootstrap.com/docs/4.1/examples/screenshots/" + thumbnailPath} />
         <Card.Title>{title}</Card.Title>
