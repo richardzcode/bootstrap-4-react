@@ -41,8 +41,8 @@ import spacing from './spacing';
 import vertical_align from './vertical_align';
 
 const docComponents = {
-  introduction,
   quick_start,
+
   alert,
   blockquote,
   breadcrumb,
@@ -57,6 +57,8 @@ const docComponents = {
 function copyProperties(from) {
   Object.keys(from).forEach(key => docComponents[key] = from[key]);
 }
+
+copyProperties(introduction);
 
 copyProperties(badge);
 copyProperties(button);
