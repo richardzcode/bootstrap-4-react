@@ -31,7 +31,7 @@ function fence(md) {
       .join('\n');
     return (
       renderComp(comp_lines) +
-      '<pre class="bg-light text-dark p-2"><code>' +
+      '<pre class="bg-light text-dark p-2 pre-scrollable"><code>' +
         encodeHtml(content) +
       '</code></pre>'
     )

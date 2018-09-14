@@ -27,6 +27,7 @@ export { default as BSup } from './Sup';
 export { default as BCanvas } from './Canvas';
 export { default as BAside } from './Aside';
 export { default as BArticle } from './Article';
+export { default as BPre } from './Pre';
 
 export * from './h';
 export * from './Table';
