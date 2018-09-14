@@ -95,6 +95,13 @@ export default class Example extends Component {
             bootstrapPath="carousel"
             b4rPath="Carousel.js"
           />
+          <ExampleCard
+            title="Blog"
+            description="Magazine like blog template with header, navigation, featured content."
+            thumbnailPath="blog.png"
+            bootstrapPath="blog"
+            b4rPath="Blog.js"
+          />
         </Card.Deck>
       </React.Fragment>
     )

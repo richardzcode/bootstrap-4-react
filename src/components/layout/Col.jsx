@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { JS } from 'fsts';
 
 import { mergeClassName, flatClassName, withClassName } from '../../utilities';
-import { BDiv, BLabel } from '../dom';
+import { BDiv, BLabel, BAside } from '../dom';
 
 const breakpoints = [ 'xs', 'sm', 'md', 'lg', 'xl' ];
 
@@ -25,9 +25,10 @@ class Col extends Component {
       ['className', 'col', 'offset', 'as'].concat(breakpoints)
     );
 
-    return as === 'label'
-      ? <BLabel {...p} className={cn}>{this.props.children}</BLabel>
-      : <BDiv {...p} className={cn}>{this.props.children}</BDiv>
+    if (as === 'label') { return <BLabel {...p} className={cn}>{this.props.children}</BLabel> }
+    if (as === 'aside') { return <BAside {...p} className={cn}>{this.props.children}</BAside> }
+
+    return <BDiv {...p} className={cn}>{this.props.children}</BDiv>
   }
 }
 

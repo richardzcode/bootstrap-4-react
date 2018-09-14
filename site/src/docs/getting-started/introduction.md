@@ -4,7 +4,7 @@ Simpliest way to build frontend with Bootstrap 4 + React.
 
 ### Original
 
-This library helps render Bootstrap markups in React. It is still original Bootstrap in action.
+This library helps render Bootstrap markups in React. It is original Bootstrap in action. You do not need to learn a new library.
 
 ```
 renderComp: introduction_1

@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { JS } from 'fsts';
 
 import { withClassName } from '../../utilities';
-import { BDiv, BHeader, BFooter } from '../dom';
+import { BDiv, BMain, BHeader, BFooter } from '../dom';
 
 class Container extends Component {
   render() {
     const { as } = this.props;
     const p = JS.lessProps(this.props, ['fluid', 'as']);
 
+    if (as === 'main' ) { return <BMain {...p}>{this.props.children}</BMain> }
     if (as === 'header' ) { return <BHeader {...p}>{this.props.children}</BHeader> }
     if (as === 'footer' ) { return <BFooter {...p}>{this.props.children}</BFooter> }
 
