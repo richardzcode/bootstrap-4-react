@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Home from './Home';
 import Documentation from './documentation';
 import Example from './Example';
+import Cbra from './Cbra';
 
 function hitCount(category, label) {
   if (window.gtag) {
@@ -40,6 +41,13 @@ export default class Main extends Component {
     return <Example path={subPath}/>
   }
 
+  renderCbra(path) {
+    if (path !== 'cbra') { return null; }
+
+    hitCount('cbra');
+    return <Cbra />;
+  }
+
   render() {
     const { path } = this.props;
 
@@ -48,6 +56,7 @@ export default class Main extends Component {
         {this.renderHome(path)}
         {this.renderDocumentation(path)}
         {this.renderExample(path)}
+        {this.renderCbra(path)}
       </React.Fragment>
     )
   }

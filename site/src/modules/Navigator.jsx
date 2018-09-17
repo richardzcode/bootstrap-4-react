@@ -60,6 +60,10 @@ export default class Navigator extends Component {
               href="#example"
               active={path === 'example'}
             >Example</Nav.ItemLink>
+            <Nav.ItemLink
+              href="#cbra"
+              active={path === 'cbra'}
+            >CBRA</Nav.ItemLink>
           </Navbar.Nav>
         </div>
         <Navbar.Nav flex="row" ml="md-auto" display="none md-flex">
