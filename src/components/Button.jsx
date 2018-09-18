@@ -6,7 +6,7 @@ import { BButton, BA, BInput, BLabel } from './dom';
 
 class Button extends Component {
   render() {
-    const { block, active, disabled, lg, sm, as } = this.props;
+    const { block, active, disabled, lg, sm, dropdownToggle, as } = this.props;
     const cn = mergeClassName(
       this.props,
       [
@@ -14,12 +14,13 @@ class Button extends Component {
         sm? 'btn-sm' : '',
         block? 'btn-block' : '',
         active? 'active' : '',
+        dropdownToggle? 'dropdown-toggle' : '',
         (as && as === 'a' && disabled)? 'disabled' : ''
       ]
     );
     let p = JS.lessProps(
       this.props,
-      ['className', 'block', 'outline', 'lg', 'sm', 'as']
+      ['className', 'block', 'outline', 'lg', 'sm', 'dropdownToggle', 'as']
     );
     if (as && as === 'a' && disabled) { p = JS.lessProps(p, 'disabled'); }
     if (active) { p['aria-pressed'] = 'true' }

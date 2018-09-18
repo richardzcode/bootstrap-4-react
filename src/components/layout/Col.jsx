@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { JS } from 'fsts';
 
 import { mergeClassName, flatClassName, withClassName } from '../../utilities';
-import { BDiv, BLabel, BAside } from '../dom';
+import { BDiv, BLabel, BAside, BNav, BMain } from '../dom';
 
 const breakpoints = [ 'xs', 'sm', 'md', 'lg', 'xl' ];
 
@@ -27,6 +27,8 @@ class Col extends Component {
 
     if (as === 'label') { return <BLabel {...p} className={cn}>{this.props.children}</BLabel> }
     if (as === 'aside') { return <BAside {...p} className={cn}>{this.props.children}</BAside> }
+    if (as === 'nav') { return <BNav {...p} className={cn}>{this.props.children}</BNav> }
+    if (as === 'main') { return <BMain {...p} className={cn}>{this.props.children}</BMain> }
 
     return <BDiv {...p} className={cn}>{this.props.children}</BDiv>
   }
