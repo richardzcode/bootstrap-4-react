@@ -30,7 +30,7 @@ export default class Cbra extends Component {
           cd my-app<br/>
           npm start
         </code></BPre>
-        <BImg w="100" src="/bootstrap-starter.png" />
+        <BImg w="50" src="/bootstrap-starter.png" />
         <BH4>Templates</BH4>
         <BP>You may create app with Bootstrap templates.</BP>
         <BPre bg="light" text="dark" p="2"><code>
