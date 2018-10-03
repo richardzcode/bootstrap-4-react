@@ -212,3 +212,23 @@ export default class App extends Component {
   }
 }
 ```
+
+### Usage
+
+The modal plugin toggles your hidden content on demand, via data attributes or JavaScript.
+
+#### Via data attributes
+
+Activate a modal without writing JavaScript. Set `data-toggle="modal"` on a controller element, like a button, along with a `data-target="#foo"` or `href="#foo"` to target a specific modal to toggle.
+
+```
+<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+```
+
+#### Via JavaScript
+
+Call a modal with id `myModal` with a single line of JavaScript:
+
+```
+Bootstrap.modal('#myModal', options);
+```

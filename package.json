@@ -3,8 +3,10 @@
   "version": "0.0.54",
   "description": "Bootstrap 4 React components",
   "main": "lib/index.js",
+  "browser": "dist/bootstrap-4-react.js",
   "scripts": {
     "build": "babel src --out-dir lib",
+    "package": "webpack",
     "test": "mocha --recursive --require babel-register"
   },
   "repository": {
@@ -27,7 +29,9 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "mocha": "^5.2.0",
-    "react": "^16.4.1"
+    "react": "^16.4.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   },
   "dependencies": {
     "bootstrap-4-required": "0.0.1",

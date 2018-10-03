@@ -38,10 +38,29 @@ function tooltip(selector, options) {
   return this;
 }
 
+function modal(selector, options) {
+  selector = selector || '.modal';
+  if ($) {
+    $(selector).modal(options)
+  } else {
+    logger.warn('no jQuery available');
+  }
+
+  return this;
+}
+
 const Bootstrap = {
   carousel,
   popover,
-  tooltip
+  tooltip,
+  modal
 }
+
+import * as Comps from './components';
+Object.keys(Comps)
+  .forEach(key => {
+    Bootstrap[key] = Comps[key];
+  });
+window.B4R = Bootstrap;
 
 export default Bootstrap;
