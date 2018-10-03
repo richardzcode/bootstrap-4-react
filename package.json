@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-4-react",
-  "version": "0.0.54",
+  "version": "0.0.55",
   "description": "Bootstrap 4 React components",
   "main": "lib/index.js",
   "browser": "dist/bootstrap-4-react.js",
