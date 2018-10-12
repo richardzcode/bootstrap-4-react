@@ -9,7 +9,7 @@ import {
 export default class Main extends Component {
   render() {
     return (
-      <Jumbotron>
+      <Jumbotron bg="white" text="dark">
         <Display4>Bootstrap</Display4>
         <Lead>Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</Lead>
         <Display4>React</Display4>
