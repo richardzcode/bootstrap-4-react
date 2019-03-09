@@ -16,6 +16,7 @@ import { withFloat } from './float';
 import { withShadow } from './shadow';
 import { withFont } from './font';
 import { withPosition } from './position';
+import { withEmbed } from './embed';
 
 export function stack(Comp, funcs) {
   if (!funcs) { return Comp; }
@@ -43,7 +44,8 @@ const domStack = [
   withFloat(),
   withShadow(),
   withFont(),
-  withPosition()
+  withPosition(),
+  withEmbed()
 ]
 
 export {
@@ -67,5 +69,6 @@ export {
   withFloat,
   withShadow,
   withFont,
-  withPosition
+  withPosition,
+  withEmbed
 };
