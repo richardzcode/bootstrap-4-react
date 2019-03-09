@@ -33,6 +33,7 @@ export default class Utilities extends Component {
             {this.renderItem('border', 'Border')}
             {this.renderItem('colors', 'Colors')}
             {this.renderItem('display', 'Display')}
+            {this.renderItem('embed', 'Embed')}
             {this.renderItem('flex', 'Flex')}
             {this.renderItem('float', 'Float')}
             {this.renderItem('shadow', 'Shadow')}
