@@ -28,9 +28,9 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "mocha": "^5.2.0",
-    "react": "^16.4.1",
+    "react": "^16.8.6",
     "webpack": "4.19.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.3.6"
   },
   "dependencies": {
     "bootstrap-4-required": "0.0.1",
