@@ -16,8 +16,8 @@ export default class Cbra extends Component {
         <BH3 mt="3">Create Bootstrap React App</BH3>
         <Lead>Create React apps with Bootstrap.</Lead>
         <BP>
-          This tool runs <a href="https://github.com/facebook/create-react-app" target="_blank">Create React App</a>{' '}
-          with <a href="https://github.com/richardzcode/bootstrap-4-react" target="_blank">Bootstrap 4 React</a>
+          This tool runs <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">Create React App</a>{' '}
+          with <a href="https://github.com/richardzcode/bootstrap-4-react" target="_blank" rel="noopener noreferrer">Bootstrap 4 React</a>
         </BP>
         <BH4>Installation</BH4>
         <BPre bg="light" text="dark" p="2"><code>
