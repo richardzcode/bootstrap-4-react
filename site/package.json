@@ -7,6 +7,7 @@
     "bootstrap-4-react": "file:../bootstrap-4-react-0.0.58.tgz",
     "fs-extra": "^7.0.1",
     "glob": "^7.1.4",
+    "gtag-simplify": "0.0.1",
     "history": "^4.9.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -31,5 +32,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }

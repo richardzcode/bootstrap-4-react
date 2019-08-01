@@ -1,8 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import createHistory from 'history/createBrowserHistory';
+import gtag from 'gtag-simplify';
 
 import { Navigator, Main } from './modules';
 import './App.css';
+
+gtag.init('UA-125186092-1');
 
 class App extends Component {
   constructor(props) {
@@ -25,6 +28,7 @@ class App extends Component {
 
   onLocation(location) {
     const path = location.hash? location.hash.slice(1) : '/';
+    gtag.updatePagePath(path);
     this.setState({ path: path });
   }
 
